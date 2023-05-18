@@ -16,14 +16,14 @@ Jogo::~Jogo()
 
 void Jogo::Executar()
 {
-    while (pGGrafico->isWindowOpen()) {
+    /*while (pGGrafico->isWindowOpen()) {
 
         pGGrafico->updateDeltaTime();
         pGGrafico->clear();
 
         pGGrafico->display();
-    }
-    /*while (window.isOpen())
+    }*/
+    while (window.isOpen())
     {
         sf::Event event;
         while (window.pollEvent(event))
@@ -35,10 +35,10 @@ void Jogo::Executar()
         jogador1->move();
         window.clear();
         for(int i=0; i<LEs->LEs.getLen(); i++) {
-            Entidade* temp = LEs->LEs.getItem(i);
+            Entidades::Entidade* temp = LEs->LEs.getItem(i);
             temp->draw();
         }
         window.display();
-    }*/
+    }
 
 }

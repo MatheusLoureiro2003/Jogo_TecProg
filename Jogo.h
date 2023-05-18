@@ -2,16 +2,17 @@
 #include <SFML/Graphics.hpp>
 #include "Jogador.h"
 #include "Inimigo.h"
+#include "Jogador.h"
+#include "Entidade.h"
 #include "Personagem.h"
 #include "ListaEntidades.h"
 #include "Fase.h"
-#include "Gerenciador_Grafico.h"
+
 
 class Jogo
 {
 private:
-	Gerenciadores::Gerenciador_Grafico* pGGrafico;
-	Gerenciadores::Evento* pEventManager;
+	
 
 	sf::Clock clock;
 	float dt;

@@ -57,9 +57,6 @@
     <ClCompile Include="Entidade.cpp">
       <Filter>Arquivos de Origem\Gerador</Filter>
     </ClCompile>
-    <ClCompile Include="Gerenciador_Grafico.cpp">
-      <Filter>Arquivos de Origem\Gerenciadores</Filter>
-    </ClCompile>
     <ClCompile Include="Personagem.cpp">
       <Filter>Arquivos de Origem\Personagens</Filter>
     </ClCompile>
@@ -91,9 +88,6 @@
     </ClInclude>
     <ClInclude Include="Jogador.h">
       <Filter>Arquivos de Cabeçalho\Personagem</Filter>
-    </ClInclude>
-    <ClInclude Include="Gerenciador_Grafico.h">
-      <Filter>Arquivos de Cabeçalho\Gerenciadores</Filter>
     </ClInclude>
     <ClInclude Include="CoordenadaTL.h">
       <Filter>Arquivos de Cabeçalho\Matematica</Filter>
