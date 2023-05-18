@@ -35,7 +35,7 @@ void Jogo::Executar()
         jogador1->move();
         window.clear();
         for(int i=0; i<LEs->LEs.getLen(); i++) {
-            Entidades::Entidade* temp = LEs->LEs.getItem(i);
+            Entidade* temp = LEs->LEs.getItem(i);
             temp->draw();
         }
         window.display();

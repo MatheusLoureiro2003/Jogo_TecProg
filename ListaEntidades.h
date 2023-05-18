@@ -4,6 +4,6 @@
 class ListaEntidades
 {
 public:
-	Lista<Entidades::Entidade> LEs;
+	Lista<Entidade> LEs;
 };
 

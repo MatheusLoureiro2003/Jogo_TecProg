@@ -8,13 +8,13 @@ class Fase
 {
 private:
 	ListaEntidades *listaEntidades;
-	Entidades::Inimigo* i1;
-	Entidades::Jogador* j1;
+	Inimigo* i1;
+	Jogador* j1;
 	sf::RenderWindow* window;
 
 	void inicializaElementos();
 public:
-	Fase(Entidades::Jogador* j1, sf::RenderWindow* window);
+	Fase(Jogador* j1, sf::RenderWindow* window);
 	~Fase();
 	ListaEntidades* getListaEntidades() { return listaEntidades; }
 };

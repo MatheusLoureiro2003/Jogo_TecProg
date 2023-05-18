@@ -7,6 +7,7 @@
 #include "Personagem.h"
 #include "ListaEntidades.h"
 #include "Fase.h"
+#include "Jogador.h"
 
 
 class Jogo
@@ -18,7 +19,7 @@ private:
 	float dt;
 
 	sf::RenderWindow window;
-	Entidades::Jogador *jogador1;
+	Jogador *jogador1;
 	ListaEntidades* LEs;
 	Fase* fase1;
 public:
