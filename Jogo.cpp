@@ -6,7 +6,7 @@ Jogo::Jogo()
 {
     //pGG = Gerenciador_Grafico::getInstance();
     jogador1 = new Jogador();
-    fase1 = new Fase(jogador1);
+    fase1 = new Fase1(jogador1);
     LEs = fase1->getListaEntidades();
     Executar();
 }

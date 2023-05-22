@@ -6,7 +6,7 @@
 #include "Entidade.h"
 #include "Ente.h"
 #include "ListaEntidades.h"
-#include "Fase.h"
+#include "Fase1.h"
 #include "Jogador.h"
 
 
@@ -21,7 +21,7 @@ private:
 	Jogador *jogador1;
 	
 	ListaEntidades* LEs;
-	Fase* fase1;
+	Fase1* fase1;
 public:
 	Jogo();
 	~Jogo();

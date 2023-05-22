@@ -34,6 +34,9 @@
     <Filter Include="Arquivos de Cabeçalho\Mundo">
       <UniqueIdentifier>{312c07de-3a5f-41a1-bb45-400c51eb343d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Fases">
+      <UniqueIdentifier>{01a3e458-8f62-4191-afca-d3e055c17057}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jogo_TecProg.cpp">
@@ -66,6 +69,9 @@
     <ClCompile Include="Gerenciador_Grafico.cpp">
       <Filter>Arquivos de Origem\Gerenciadores</Filter>
     </ClCompile>
+    <ClCompile Include="Fase1.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Jogo.h">
@@ -81,9 +87,6 @@
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="ListaEntidades.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Fase.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="Inimigo.h">
@@ -103,6 +106,12 @@
     </ClInclude>
     <ClInclude Include="Gerenciador_Grafico.h">
       <Filter>Arquivos de Cabeçalho\Gerenciadores</Filter>
+    </ClInclude>
+    <ClInclude Include="Fase.h">
+      <Filter>Arquivos de Cabeçalho\Fases</Filter>
+    </ClInclude>
+    <ClInclude Include="Fase1.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

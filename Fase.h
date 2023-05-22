@@ -8,16 +8,17 @@
 class Fase :
 	public Ente
 {
-private:
+protected:
 	ListaEntidades *listaEntidades;
 	Inimigo* i1;
 	Jogador* j1;
 
-	void inicializaElementos();
+	
 public:
-	Fase(Jogador* j1);
-	~Fase();
-	ListaEntidades* getListaEntidades() { return listaEntidades; }
+	Fase();
+	virtual ~Fase();
+	virtual void inicializaElementos() = 0;
+	virtual ListaEntidades* getListaEntidades() { return listaEntidades; }
 	void draw() {
 		for (int i = 0; i < listaEntidades->getLen(); i++) {
 			Entidade* temp = listaEntidades->getItem(i);
