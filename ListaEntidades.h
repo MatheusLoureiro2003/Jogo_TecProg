@@ -5,5 +5,7 @@ class ListaEntidades
 {
 public:
 	Lista<Entidade> LEs;
+	int getLen() { return LEs.getLen(); }
+	Entidade* getItem(int i) { return LEs.getItem(i); }
 };
 

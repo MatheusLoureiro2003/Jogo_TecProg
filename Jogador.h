@@ -1,5 +1,5 @@
 #pragma once
-#include "Personagem.h"
+#include "Entidade.h"
 
 class Jogador :
     public Entidade
@@ -9,5 +9,6 @@ public:
     Jogador();
     ~Jogador();
     void move();
- };
+    //void executar();
+};
 

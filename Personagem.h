@@ -4,10 +4,13 @@
 class Personagem : 
 	public Entidade
 {
-private:
+protected:
+	int num_Vidas;
+
 public:
 	Personagem();
 	~Personagem();
+	int getVidas() const { return num_Vidas; }
 };
 
 

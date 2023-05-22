@@ -12,6 +12,8 @@ public:
 
 	int getLen() { return len; }
 
+	
+
 	TL* getItem(int posicao) {
 		Elemento<TL>* temp = pPrimeiro;
 		if (posicao == 0) {
@@ -58,6 +60,7 @@ public:
 		delete temp;
 		len--;
 	}
+
 };
 
 template<class TL>

@@ -4,18 +4,25 @@
 #include "ListaEntidades.h"
 #include <SFML/Graphics.hpp>
 #include "Entidade.h"
-class Fase
+#include "Ente.h"
+class Fase :
+	public Ente
 {
 private:
 	ListaEntidades *listaEntidades;
 	Inimigo* i1;
 	Jogador* j1;
-	sf::RenderWindow* window;
 
 	void inicializaElementos();
 public:
-	Fase(Jogador* j1, sf::RenderWindow* window);
+	Fase(Jogador* j1);
 	~Fase();
 	ListaEntidades* getListaEntidades() { return listaEntidades; }
+	void draw() {
+		for (int i = 0; i < listaEntidades->getLen(); i++) {
+			Entidade* temp = listaEntidades->getItem(i);
+			temp->draw();
+		}
+	}
 };
 

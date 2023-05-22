@@ -3,17 +3,20 @@
 #include "Ente.h"
 
 
-class Entidade 
+class Entidade :
+	public Ente
 {
 protected:
 	sf::RectangleShape body;
-	sf::RenderWindow* window;
+	int x;
+	int y;
 public:
 	Entidade();
 	~Entidade();
-
-	void setWindow(sf::RenderWindow* window) { this->window = window; }
-	void draw() { window->draw(body); }
+	//virtual void executar() = 0;
+	void draw() { pGG->draw(body); }
 };
 
+
+	
 
