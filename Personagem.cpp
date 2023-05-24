@@ -1,9 +1,9 @@
 #include "Personagem.h"
 
-Personagem::Personagem()
+Entidades::Personagens::Personagem::Personagem()
 {
 }
 
-Personagem::~Personagem()
+Entidades::Personagens::Personagem::~Personagem()
 {
 }

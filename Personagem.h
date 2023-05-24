@@ -1,16 +1,16 @@
 #pragma once
 #include "Entidade.h"
-
-class Personagem : 
-	public Entidade
-{
-protected:
-	int num_Vidas;
-
-public:
-	Personagem();
-	~Personagem();
-	int getVidas() const { return num_Vidas; }
-};
-
+namespace Entidades {
+	namespace Personagens {
+		class Personagem :
+			public Entidade::Entidade
+		{
+		protected:
+		public:
+			Personagem();
+			virtual ~Personagem();
+			//virtual int getVidas() const = 0;
+		};
+	}
+}
 

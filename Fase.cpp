@@ -1,15 +1,15 @@
 #include "Fase.h"
 
 
-Fase::Fase()
+Fases::Fase::Fase()
 {
 }
 
-Fase::~Fase()
+Fases::Fase::~Fase()
 {
 }
 
-void Fase::inicializaElementos()
+void Fases::Fase::inicializaElementos()
 {
 }
 

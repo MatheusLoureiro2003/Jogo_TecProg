@@ -14,14 +14,14 @@ class Jogo
 {
 private:
 	
-	static Gerenciador_Grafico* pGG;
+	static Gerenciadores::Gerenciador_Grafico* pGG;
 	sf::Clock clock;
 	float dt;
 	sf::RenderWindow window;
-	Jogador *jogador1;
+	Entidades::Personagens::Jogador *jogador1;
 	
-	ListaEntidades* LEs;
-	Fase1* fase1;
+	Listas::ListaEntidades* LEs;
+	Fases::Fase1* fase1;
 public:
 	Jogo();
 	~Jogo();

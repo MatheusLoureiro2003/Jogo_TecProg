@@ -1,14 +1,17 @@
 #include "Jogador.h"
 
-Jogador::Jogador()
+
+#define JOGADOR_VIDA 5
+
+Entidades::Personagens::Jogador::Jogador() //:Personagem(JOGADOR_VIDA)
 {
 }
 
-Jogador::~Jogador()
+Entidades::Personagens::Jogador::~Jogador()
 {
 }
 
-void Jogador::move()
+void Entidades::Personagens::Jogador::move()
 {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
         body.move(sf::Vector2f(0.1f, 0.f));

@@ -1,11 +1,12 @@
 #pragma once
 #include "Lista.h"
 #include "Entidade.h"
-class ListaEntidades
-{
-public:
-	Lista<Entidade> LEs;
-	int getLen() { return LEs.getLen(); }
-	Entidade* getItem(int i) { return LEs.getItem(i); }
-};
-
+namespace Listas {
+	class ListaEntidades
+	{
+	public:
+		Listas::Lista<Entidade::Entidade> LEs;
+		int getLen() { return LEs.getLen(); }
+		Entidade::Entidade* getItem(int i) { return LEs.getItem(i); }
+	};
+}

@@ -1,16 +1,19 @@
 #pragma once
 #include "Personagem.h"
 
+namespace Entidades {
+    namespace Personagens {
+        class Inimigo :
+            public Entidades::Personagens::Personagem
+        {
+        private:
 
-class Inimigo :
-    public Entidade
-{
-private:
-
-public:
-    Inimigo();
-    ~Inimigo();
-   // void executar();
-};
-
+        public:
+            Inimigo();
+            ~Inimigo();
+            //int getVidas() { return num_Vidas; }
+           // void executar();
+        };
+    }
+}
 

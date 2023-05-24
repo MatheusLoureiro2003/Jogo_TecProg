@@ -1,14 +1,19 @@
 #pragma once
-#include "Entidade.h"
+#include "Personagem.h"
 
-class Jogador :
-    public Entidade
-{
-private:
-public:
-    Jogador();
-    ~Jogador();
-    void move();
-    //void executar();
-};
+namespace Entidades {
+    namespace Personagens {
+        class Jogador :
+            public Entidades::Personagens::Personagem
+        {
+        private:
+        public:
+            Jogador();
+            ~Jogador();
+            void move();
+            //int getVidas() { return num_Vidas; }
+            //void executar();
+        };
+    }
+}
 

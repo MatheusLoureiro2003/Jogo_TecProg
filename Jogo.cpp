@@ -1,12 +1,12 @@
 #include "Jogo.h"
 
-Gerenciador_Grafico* Jogo::pGG = Gerenciador_Grafico::getInstance();
+Gerenciadores::Gerenciador_Grafico* Jogo::pGG = Gerenciadores::Gerenciador_Grafico::getInstance();
 
 Jogo::Jogo()
 {
     //pGG = Gerenciador_Grafico::getInstance();
-    jogador1 = new Jogador();
-    fase1 = new Fase1(jogador1);
+    jogador1 = new Entidades::Personagens::Jogador();
+    fase1 = new Fases::Fase1(jogador1);
     LEs = fase1->getListaEntidades();
     Executar();
 }
