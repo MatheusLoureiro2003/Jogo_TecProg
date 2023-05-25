@@ -37,11 +37,11 @@
     <Filter Include="Arquivos de Cabeçalho\Fases">
       <UniqueIdentifier>{01a3e458-8f62-4191-afca-d3e055c17057}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Ativos">
-      <UniqueIdentifier>{2ac64560-5e7c-4cca-ba5c-a0bb5281b320}</UniqueIdentifier>
+    <Filter Include="Arquivos de Cabeçalho\Elementos_Graficos">
+      <UniqueIdentifier>{be1cf4f1-bb63-4b6f-a4cd-45abf4497e19}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Ativos\Monge_Espacial">
-      <UniqueIdentifier>{37e04260-6f3f-45e1-a6b5-58d299d779eb}</UniqueIdentifier>
+    <Filter Include="Arquivos de Origem\Elementos_Graficos">
+      <UniqueIdentifier>{8f6850dd-8ea5-487f-b911-c6245dcd4175}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +77,12 @@
     </ClCompile>
     <ClCompile Include="Fase1.cpp">
       <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Animacao.cpp">
+      <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
+    </ClCompile>
+    <ClCompile Include="UmaAnimacaoFrame.cpp">
+      <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -119,10 +125,19 @@
     <ClInclude Include="Fase1.h">
       <Filter>Arquivos de Cabeçalho\Fases</Filter>
     </ClInclude>
+    <ClInclude Include="Animacao.h">
+      <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
+    </ClInclude>
+    <ClInclude Include="UmaAnimacaoFrame.h">
+      <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\Downloads\Monge_Espacial.png">
-      <Filter>Ativos\Monge_Espacial</Filter>
-    </Image>
+    <ResourceCompile Include="Jogo_TecProg.rc">
+      <Filter>Arquivos de Recurso</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
