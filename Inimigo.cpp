@@ -12,3 +12,7 @@ Entidades::Personagens::Inimigo::Inimigo() //: Personagem(INIMIGO_VIDA)
 Entidades::Personagens::Inimigo::~Inimigo()
 {
 }
+
+void Entidades::Personagens::Inimigo::atualizar()
+{
+}

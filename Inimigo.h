@@ -11,6 +11,7 @@ namespace Entidades {
         public:
             Inimigo();
             ~Inimigo();
+            void atualizar();
             //int getVidas() { return num_Vidas; }
            // void executar();
         };

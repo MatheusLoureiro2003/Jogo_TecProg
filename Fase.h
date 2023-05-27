@@ -5,27 +5,24 @@
 #include <SFML/Graphics.hpp>
 #include "Entidade.h"
 #include "Ente.h"
+#include "SingleFrameAnimation.h"
 
 namespace Fases {
 	class Fase :
 		public Ente
 	{
-	protected:
+	private:
 		Listas::ListaEntidades* listaEntidades;
 		Entidades::Personagens::Inimigo* i1;
 		Entidades::Personagens::Jogador* j1;
-
+		SingleFrameAnimation Background;
 
 	public:
-		Fase();
-		virtual ~Fase();
-		virtual void inicializaElementos() = 0;
-		virtual Listas::ListaEntidades* getListaEntidades() { return listaEntidades; }
-		void draw() {
-			for (int i = 0; i < listaEntidades->getLen(); i++) {
-				Entidade::Entidade* temp = listaEntidades->getItem(i);
-				temp->draw();
-			}
-		}
+		Fase(Entidades::Personagens::Jogador* j1);
+		~Fase();
+		void inicializaElementos();
+		Listas::ListaEntidades* getListaEntidades() { return listaEntidades; }
+		void Executar();
+		void draw();
 	};
 }

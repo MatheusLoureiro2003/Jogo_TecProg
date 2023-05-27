@@ -63,6 +63,24 @@ namespace Listas {
 			delete temp;
 			len--;
 		}
+		void limparLista() {
+			if (pPrimeiro) {
+				Elemento<TL>* aux = pPrimeiro;
+				Elemento<TL>* aux2 = nullptr;
+				while (aux != nullptr) {
+					aux2 = aux->getPProx();
+					delete(aux->getItem());
+					aux = nullptr;
+					aux = aux2;
+				}
+			}
+			pPrimeiro = nullptr;
+			pUltimo = nullptr;
+		}
+		void removerElemento(int pos) {
+			TL* elemento = getItem(pos);
+			return pop(elemento);
+		}
 
 	};
 
@@ -77,5 +95,6 @@ namespace Listas {
 	template<class TL>
 	inline Lista<TL>::~Lista()
 	{
+		limparLista();
 	}
 }

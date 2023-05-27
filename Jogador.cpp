@@ -26,3 +26,8 @@ void Entidades::Personagens::Jogador::move()
         body.move(sf::Vector2f(0.0f, 0.1f));
     }
 }
+
+void Entidades::Personagens::Jogador::atualizar()
+{
+    pGG->centerView(sf::Vector2f(pos.x, 300.0f));
+}

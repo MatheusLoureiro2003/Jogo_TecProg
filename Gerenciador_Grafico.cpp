@@ -67,9 +67,9 @@ Matematica::CoordF Gerenciadores::Gerenciador_Grafico::getTopLeftPosition() cons
 	return Matematica::CoordF(window->getView().getCenter().x - window->getSize().x / 2, window->getView().getCenter().y - window->getSize().y / 2);
 }
 
-void Gerenciadores::Gerenciador_Grafico::centerView(Matematica::CoordF pos)
+void Gerenciadores::Gerenciador_Grafico::centerView(const sf::Vector2f pos)
 {
-	view.setCenter(sf::Vector2f(pos.x, pos.y));
+	view.setCenter(pos);
 	window->setView(view);
 }
 

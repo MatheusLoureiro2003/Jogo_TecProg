@@ -6,7 +6,7 @@ Jogo::Jogo()
 {
     //pGG = Gerenciador_Grafico::getInstance();
     jogador1 = new Entidades::Personagens::Jogador();
-    fase1 = new Fases::Fase1(jogador1);
+    fase1 = new Fases::Fase(jogador1);
     LEs = fase1->getListaEntidades();
     Executar();
 }
@@ -21,7 +21,7 @@ void Jogo::Executar()
     while (pGG->isWindowOpen())
     {
         sf::Event event;
-        while (window.pollEvent(event))
+        while (pGG->getWindow()->pollEvent(event))
         {
             if (event.type == sf::Event::Closed)
                 pGG->closeWindow();

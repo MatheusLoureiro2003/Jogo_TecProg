@@ -9,6 +9,7 @@ namespace Entidades {
 		public:
 			Personagem();
 			virtual ~Personagem();
+			virtual void atualizar() = 0;
 			//virtual int getVidas() const = 0;
 		};
 	}

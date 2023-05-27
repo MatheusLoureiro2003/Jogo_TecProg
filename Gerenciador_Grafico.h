@@ -38,7 +38,7 @@ namespace Gerenciadores {
 
 		Matematica::CoordF getTopLeftPosition() const;
 
-		void centerView(Matematica::CoordF pos);
+		void centerView(const sf::Vector2f pos);
 
 		sf::Texture* loadTexture(const char* path);
 

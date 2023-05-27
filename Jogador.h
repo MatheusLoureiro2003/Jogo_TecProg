@@ -11,6 +11,7 @@ namespace Entidades {
             Jogador();
             ~Jogador();
             void move();
+            void atualizar();
             //int getVidas() { return num_Vidas; }
             //void executar();
         };

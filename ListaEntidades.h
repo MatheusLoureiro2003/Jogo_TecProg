@@ -4,9 +4,18 @@
 namespace Listas {
 	class ListaEntidades
 	{
-	public:
+	private:
 		Listas::Lista<Entidade::Entidade> LEs;
+	public:
+		ListaEntidades();
+		~ListaEntidades();
+		void addEntidade(Entidade::Entidade* entidade);
+		void removerEntidade(Entidade::Entidade* entidade);
+		void removerEntidade(int pos);
 		int getLen() { return LEs.getLen(); }
 		Entidade::Entidade* getItem(int i) { return LEs.getItem(i); }
+		void limparLista();
+		void executar();
+		void desenharEntidades();
 	};
 }
