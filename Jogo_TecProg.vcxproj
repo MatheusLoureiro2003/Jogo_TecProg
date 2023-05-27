@@ -156,8 +156,10 @@
     <ClCompile Include="Jogo.cpp" />
     <ClCompile Include="Jogo_TecProg.cpp" />
     <ClCompile Include="ListaEntidades.cpp" />
+    <ClCompile Include="MultiFrameAnimation.cpp" />
     <ClCompile Include="Personagem.cpp" />
-    <ClCompile Include="UmaAnimacaoFrame.cpp" />
+    <ClCompile Include="SingleAnimation.cpp" />
+    <ClCompile Include="SingleFrameAnimation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animacao.h" />
@@ -173,9 +175,11 @@
     <ClInclude Include="Jogo.h" />
     <ClInclude Include="Lista.h" />
     <ClInclude Include="ListaEntidades.h" />
+    <ClInclude Include="MultiFrameAnimation.h" />
     <ClInclude Include="Personagem.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="UmaAnimacaoFrame.h" />
+    <ClInclude Include="SingleAnimation.h" />
+    <ClInclude Include="SingleFrameAnimation.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Jogo_TecProg.rc" />

@@ -81,7 +81,13 @@
     <ClCompile Include="Animacao.cpp">
       <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
     </ClCompile>
-    <ClCompile Include="UmaAnimacaoFrame.cpp">
+    <ClCompile Include="SingleFrameAnimation.cpp">
+      <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleAnimation.cpp">
+      <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiFrameAnimation.cpp">
       <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
     </ClCompile>
   </ItemGroup>
@@ -128,11 +134,17 @@
     <ClInclude Include="Animacao.h">
       <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
     </ClInclude>
-    <ClInclude Include="UmaAnimacaoFrame.h">
+    <ClInclude Include="SingleFrameAnimation.h">
       <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleAnimation.h">
+      <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiFrameAnimation.h">
+      <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
