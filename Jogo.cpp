@@ -1,6 +1,7 @@
 #include "Jogo.h"
 
 Gerenciadores::Gerenciador_Grafico* Jogo::pGG = Gerenciadores::Gerenciador_Grafico::getInstance();
+Gerenciadores::Gerenciador_Eventos* Jogo::pEve = Gerenciadores::Gerenciador_Eventos::getInstance();
 
 Jogo::Jogo()
 {

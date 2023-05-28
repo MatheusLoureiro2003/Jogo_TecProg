@@ -43,6 +43,9 @@
     <Filter Include="Arquivos de Origem\Elementos_Graficos">
       <UniqueIdentifier>{8f6850dd-8ea5-487f-b911-c6245dcd4175}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Listas">
+      <UniqueIdentifier>{7cac8cf1-a5dc-46d1-80b6-8b4b543e91f9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jogo_TecProg.cpp">
@@ -87,21 +90,15 @@
     <ClCompile Include="MultiFrameAnimation.cpp">
       <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
     </ClCompile>
+    <ClCompile Include="Gerenciador_Eventos.cpp">
+      <Filter>Arquivos de Origem\Gerenciadores</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Jogo.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="Entidade.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Elemento.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
     <ClInclude Include="Lista.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="ListaEntidades.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="Inimigo.h">
@@ -139,6 +136,18 @@
     </ClInclude>
     <ClInclude Include="MultiFrameAnimation.h">
       <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
+    </ClInclude>
+    <ClInclude Include="Gerenciador_Eventos.h">
+      <Filter>Arquivos de Cabeçalho\Gerenciadores</Filter>
+    </ClInclude>
+    <ClInclude Include="Entidade.h">
+      <Filter>Arquivos de Cabeçalho\Listas</Filter>
+    </ClInclude>
+    <ClInclude Include="Elemento.h">
+      <Filter>Arquivos de Cabeçalho\Listas</Filter>
+    </ClInclude>
+    <ClInclude Include="ListaEntidades.h">
+      <Filter>Arquivos de Cabeçalho\Listas</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
