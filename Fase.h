@@ -17,10 +17,10 @@ namespace Fases {
 		Entidades::Personagens::Jogador* j1;
 
 	public:
-		Fase(Entidades::Personagens::Jogador* j1);
+		Fase();
 		~Fase();
 		void inicializaElementos();
-		Listas::ListaEntidades* getListaEntidades() { return listaEntidades; }
+		Listas::ListaEntidades* getListaEntidades();
 		void Executar();
 		void draw();
 	};

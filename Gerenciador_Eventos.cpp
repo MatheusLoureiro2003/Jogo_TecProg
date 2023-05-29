@@ -41,9 +41,9 @@ void Gerenciadores::Gerenciador_Eventos::isKeyPressed(const sf::Keyboard::Key te
 
 }
 
-void Gerenciadores::Gerenciador_Eventos::isKeyLoose(sf::Keyboard::Key tecla)
+void Gerenciadores::Gerenciador_Eventos::isKeyLoose(const sf::Keyboard::Key tecla)
 {
-        if (tecla == sf::Keyboard::A || tecla == sf::Keyboard::D) {
+        if (tecla == sf::Keyboard::D || tecla == sf::Keyboard::A) {
             pj1->Stop();
         }
 }

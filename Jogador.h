@@ -2,6 +2,7 @@
 #include "Personagem.h"
 
 #define VELOCIDADE_JOGADOR 200.0f
+namespace Gerenciadores { class Gerenciador_Evento; }
 
 namespace Entidades {
     namespace Personagens {

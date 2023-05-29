@@ -16,10 +16,10 @@ private:
 	static Gerenciadores::Gerenciador_Eventos* pEve;
 	static Gerenciadores::Gerenciador_Grafico* pGG;
 	
-	//Gerenciadores::Gerenciador_Evento pEve;
+	
 	sf::Clock clock;
 	float dt;
-	Entidades::Personagens::Jogador *jogador1;
+	
 	
 	Listas::ListaEntidades* LEs;
 	Fases::Fase* fase1;
