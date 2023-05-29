@@ -2,12 +2,10 @@
 #include <SFML/Graphics.hpp>
 #include "Jogador.h"
 #include "Inimigo.h"
-#include "Jogador.h"
 #include "Entidade.h"
 #include "Ente.h"
 #include "ListaEntidades.h"
 #include "Fase.h"
-#include "Jogador.h"
 #include "Gerenciador_Eventos.h"
 
 

@@ -1,6 +1,5 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "CoordenadaTL.h"
 
 namespace Gerenciadores {
 	class Gerenciador_Grafico
@@ -32,11 +31,7 @@ namespace Gerenciadores {
 
 		float updateDeltaTime();
 		
-		void setWindowSize(Matematica::CoordU size);
-
-		Matematica::CoordU getWindowSize() const;
-
-		Matematica::CoordF getTopLeftPosition() const;
+		const sf::Vector2f getWindowSize() const;
 
 		void centerView(const sf::Vector2f pos);
 

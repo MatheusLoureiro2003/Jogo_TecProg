@@ -9,12 +9,12 @@ Listas::ListaEntidades::~ListaEntidades()
 {
 }
 
-void Listas::ListaEntidades::addEntidade(Entidade::Entidade* entidade)
+void Listas::ListaEntidades::addEntidade(Entidades::Entidade* entidade)
 {
 	LEs.push(entidade);
 }
 
-void Listas::ListaEntidades::removerEntidade(Entidade::Entidade* entidade)
+void Listas::ListaEntidades::removerEntidade(Entidades::Entidade* entidade)
 {
 	LEs.pop(entidade);
 }
@@ -32,7 +32,7 @@ void Listas::ListaEntidades::limparLista()
 void Listas::ListaEntidades::executar()
 {
 	int tam = LEs.getLen();
-	Entidade::Entidade* aux = nullptr;
+	Entidades::Entidade* aux = nullptr;
 	for (int i = 0; i < tam; i++) {
 		aux = LEs.getItem(i);
 		aux->atualizar();
@@ -42,7 +42,7 @@ void Listas::ListaEntidades::executar()
 void Listas::ListaEntidades::desenharEntidades()
 {
 	int tam = LEs.getLen();
-	Entidade::Entidade* aux = nullptr;
+	Entidades::Entidade* aux = nullptr;
 	for (int i = 0; i < tam; i++) {
 		aux = LEs.getItem(i);
 		aux->draw();

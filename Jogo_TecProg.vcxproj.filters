@@ -13,23 +13,11 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Arquivos de Origem\Personagens">
-      <UniqueIdentifier>{29baa9ba-20e8-4e19-b050-d505a800e272}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Arquivos de Origem\Gerador">
-      <UniqueIdentifier>{8de3fac8-a9d7-492a-aa3c-597bd40f8919}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Arquivos de Cabeçalho\Personagem">
-      <UniqueIdentifier>{7e57ae22-ba55-4fcd-a2f9-3387d5f68653}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Arquivos de Cabeçalho\Gerenciadores">
       <UniqueIdentifier>{21531cf2-921d-40c0-beb3-9aed58b6059a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Arquivos de Origem\Gerenciadores">
       <UniqueIdentifier>{ab499169-744b-4f31-b7e5-2699dd6718fc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Arquivos de Cabeçalho\Matematica">
-      <UniqueIdentifier>{929a6cc1-2bbf-4513-90d4-6bd1bdf401d3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Arquivos de Cabeçalho\Mundo">
       <UniqueIdentifier>{312c07de-3a5f-41a1-bb45-400c51eb343d}</UniqueIdentifier>
@@ -46,6 +34,24 @@
     <Filter Include="Arquivos de Cabeçalho\Listas">
       <UniqueIdentifier>{7cac8cf1-a5dc-46d1-80b6-8b4b543e91f9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Origem\Lista">
+      <UniqueIdentifier>{531fdbd0-14ca-4645-b25d-fa3427010deb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Fase">
+      <UniqueIdentifier>{401acaca-770b-4a35-a325-933476176064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Entidade">
+      <UniqueIdentifier>{8de3fac8-a9d7-492a-aa3c-597bd40f8919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Entidade\Personagens">
+      <UniqueIdentifier>{29baa9ba-20e8-4e19-b050-d505a800e272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Entidade">
+      <UniqueIdentifier>{ad96659c-820a-42b8-889e-bb0872b0b426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Entidade\Personagem">
+      <UniqueIdentifier>{7e57ae22-ba55-4fcd-a2f9-3387d5f68653}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jogo_TecProg.cpp">
@@ -54,23 +60,14 @@
     <ClCompile Include="Jogo.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="ListaEntidades.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="Fase.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
     <ClCompile Include="Inimigo.cpp">
-      <Filter>Arquivos de Origem\Personagens</Filter>
+      <Filter>Arquivos de Origem\Entidade\Personagens</Filter>
     </ClCompile>
     <ClCompile Include="Jogador.cpp">
-      <Filter>Arquivos de Origem\Personagens</Filter>
-    </ClCompile>
-    <ClCompile Include="Entidade.cpp">
-      <Filter>Arquivos de Origem\Gerador</Filter>
+      <Filter>Arquivos de Origem\Entidade\Personagens</Filter>
     </ClCompile>
     <ClCompile Include="Personagem.cpp">
-      <Filter>Arquivos de Origem\Personagens</Filter>
+      <Filter>Arquivos de Origem\Entidade\Personagens</Filter>
     </ClCompile>
     <ClCompile Include="Ente.cpp">
       <Filter>Arquivos de Origem</Filter>
@@ -81,37 +78,31 @@
     <ClCompile Include="Animacao.cpp">
       <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
     </ClCompile>
-    <ClCompile Include="SingleFrameAnimation.cpp">
-      <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
-    </ClCompile>
-    <ClCompile Include="SingleAnimation.cpp">
-      <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
-    </ClCompile>
-    <ClCompile Include="MultiFrameAnimation.cpp">
-      <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
-    </ClCompile>
     <ClCompile Include="Gerenciador_Eventos.cpp">
       <Filter>Arquivos de Origem\Gerenciadores</Filter>
+    </ClCompile>
+    <ClCompile Include="ListaEntidades.cpp">
+      <Filter>Arquivos de Origem\Lista</Filter>
+    </ClCompile>
+    <ClCompile Include="Fase.cpp">
+      <Filter>Arquivos de Origem\Fase</Filter>
+    </ClCompile>
+    <ClCompile Include="Entidade.cpp">
+      <Filter>Arquivos de Origem\Entidade</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Jogo.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="Lista.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
     <ClInclude Include="Inimigo.h">
-      <Filter>Arquivos de Cabeçalho\Personagem</Filter>
+      <Filter>Arquivos de Cabeçalho\Entidade\Personagem</Filter>
     </ClInclude>
     <ClInclude Include="Jogador.h">
-      <Filter>Arquivos de Cabeçalho\Personagem</Filter>
-    </ClInclude>
-    <ClInclude Include="CoordenadaTL.h">
-      <Filter>Arquivos de Cabeçalho\Matematica</Filter>
+      <Filter>Arquivos de Cabeçalho\Entidade\Personagem</Filter>
     </ClInclude>
     <ClInclude Include="Personagem.h">
-      <Filter>Arquivos de Cabeçalho\Personagem</Filter>
+      <Filter>Arquivos de Cabeçalho\Entidade\Personagem</Filter>
     </ClInclude>
     <ClInclude Include="Ente.h">
       <Filter>Arquivos de Cabeçalho\Mundo</Filter>
@@ -125,28 +116,22 @@
     <ClInclude Include="Animacao.h">
       <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
     </ClInclude>
-    <ClInclude Include="SingleFrameAnimation.h">
-      <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="SingleAnimation.h">
-      <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
-    </ClInclude>
-    <ClInclude Include="MultiFrameAnimation.h">
-      <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
-    </ClInclude>
     <ClInclude Include="Gerenciador_Eventos.h">
       <Filter>Arquivos de Cabeçalho\Gerenciadores</Filter>
-    </ClInclude>
-    <ClInclude Include="Entidade.h">
-      <Filter>Arquivos de Cabeçalho\Listas</Filter>
     </ClInclude>
     <ClInclude Include="Elemento.h">
       <Filter>Arquivos de Cabeçalho\Listas</Filter>
     </ClInclude>
     <ClInclude Include="ListaEntidades.h">
+      <Filter>Arquivos de Cabeçalho\Listas</Filter>
+    </ClInclude>
+    <ClInclude Include="Entidade.h">
+      <Filter>Arquivos de Cabeçalho\Entidade</Filter>
+    </ClInclude>
+    <ClInclude Include="Lista.h">
       <Filter>Arquivos de Cabeçalho\Listas</Filter>
     </ClInclude>
   </ItemGroup>

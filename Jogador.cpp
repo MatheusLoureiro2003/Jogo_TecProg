@@ -1,9 +1,8 @@
 #include "Jogador.h"
+#include <cmath>
 
-
-#define JOGADOR_VIDA 5
-
-Entidades::Personagens::Jogador::Jogador() //:Personagem(JOGADOR_VIDA)
+Entidades::Personagens::Jogador::Jogador() :
+    Entidades::Personagens::Personagem(200.0f)
 {
 }
 
@@ -11,7 +10,7 @@ Entidades::Personagens::Jogador::~Jogador()
 {
 }
 
-void Entidades::Personagens::Jogador::move()
+/*void Entidades::Personagens::Jogador::move()
 {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
         body.move(sf::Vector2f(0.1f, 0.f));
@@ -25,9 +24,13 @@ void Entidades::Personagens::Jogador::move()
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
         body.move(sf::Vector2f(0.0f, 0.1f));
     }
-}
+}*/
 
 void Entidades::Personagens::Jogador::atualizar()
 {
-    pGG->centerView(sf::Vector2f(pos.x, 300.0f));
+    if (toLeft) {
+        updatePosition();
+    }
+    relogio.restart();
+   
 }

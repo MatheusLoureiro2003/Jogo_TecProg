@@ -5,15 +5,15 @@ namespace Listas {
 	class ListaEntidades
 	{
 	private:
-		Listas::Lista<Entidade::Entidade> LEs;
+		Listas::Lista<Entidades::Entidade> LEs;
 	public:
 		ListaEntidades();
 		~ListaEntidades();
-		void addEntidade(Entidade::Entidade* entidade);
-		void removerEntidade(Entidade::Entidade* entidade);
+		void addEntidade(Entidades::Entidade* entidade);
+		void removerEntidade(Entidades::Entidade* entidade);
 		void removerEntidade(int pos);
 		int getLen() { return LEs.getLen(); }
-		Entidade::Entidade* getItem(int i) { return LEs.getItem(i); }
+		Entidades::Entidade* getItem(int i) { return LEs.getItem(i); }
 		void limparLista();
 		void executar();
 		void desenharEntidades();

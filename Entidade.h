@@ -2,7 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include "Ente.h"
 
-namespace Entidade {
+namespace Entidades {
 	class Entidade :
 		public Ente
 	{

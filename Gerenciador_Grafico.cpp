@@ -50,22 +50,11 @@ sf::RenderWindow* Gerenciadores::Gerenciador_Grafico::getWindow() const
 	return window;
 }
 
-void Gerenciadores::Gerenciador_Grafico::setWindowSize(Matematica::CoordU size)
+const sf::Vector2f Gerenciadores::Gerenciador_Grafico::getWindowSize() const
 {
-	window->setSize(sf::Vector2u(size.x, size.y));
-	view.setSize(size.x, size.y);
-	window->setView(view);
+	return (sf::Vector2f)window->getSize();
 }
 
-Matematica::CoordU Gerenciadores::Gerenciador_Grafico::getWindowSize() const
-{
-	return Matematica::CoordU(window->getSize().x, window->getSize().y);
-}
-
-Matematica::CoordF Gerenciadores::Gerenciador_Grafico::getTopLeftPosition() const
-{
-	return Matematica::CoordF(window->getView().getCenter().x - window->getSize().x / 2, window->getView().getCenter().y - window->getSize().y / 2);
-}
 
 void Gerenciadores::Gerenciador_Grafico::centerView(const sf::Vector2f pos)
 {

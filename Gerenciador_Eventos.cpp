@@ -27,25 +27,25 @@ void Gerenciadores::Gerenciador_Eventos::setJogador(Entidades::Personagens::Joga
     this->pj1 = pj1;
 }
 
-void Gerenciadores::Gerenciador_Eventos::isKeyPressed(sf::Keyboard::Key tecla)
+void Gerenciadores::Gerenciador_Eventos::isKeyPressed(const sf::Keyboard::Key tecla)
 {
-        /*if (tecla == sf::Keyboard::A) {
-            pj1->move(true);
+        if (tecla == sf::Keyboard::A) {
+            pj1->Walk(true);
         }
         else if (tecla == sf::Keyboard::D) {
-            pj1->move(false);
+            pj1->Walk(false);
         }
         else if (tecla == sf::Keyboard::Escape) {
             pGG->closeWindow();
-        }*/
+        }
 
 }
 
 void Gerenciadores::Gerenciador_Eventos::isKeyLoose(sf::Keyboard::Key tecla)
 {
-        /*if (tecla == sf::Keyboard::A || tecla == sf::Keyboard::D) {
-            pj1->stop();
-        }*/
+        if (tecla == sf::Keyboard::A || tecla == sf::Keyboard::D) {
+            pj1->Stop();
+        }
 }
 
 void Gerenciadores::Gerenciador_Eventos::executar()

@@ -1,6 +1,8 @@
 #pragma once
 #include "Personagem.h"
 
+#define VELOCIDADE_JOGADOR 200.0f
+
 namespace Entidades {
     namespace Personagens {
         class Jogador :
@@ -10,7 +12,7 @@ namespace Entidades {
         public:
             Jogador();
             ~Jogador();
-            void move();
+            //void move();
             void atualizar();
             //int getVidas() { return num_Vidas; }
             //void executar();

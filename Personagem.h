@@ -3,12 +3,22 @@
 namespace Entidades {
 	namespace Personagens {
 		class Personagem :
-			public Entidade::Entidade
+			public Entidades::Entidade
 		{
 		protected:
+			sf::Vector2f lastSpeed;
+			bool canWalk;
+			bool toLeft;
+			//bool canWalk;
+			//bool toLeft;
+			sf::Clock relogio;
+			float dt;
 		public:
-			Personagem();
+			Personagem(const float speed);
 			virtual ~Personagem();
+			void Walk(const bool toLeft);
+			void Stop();
+			void updatePosition();
 			virtual void atualizar() = 0;
 			//virtual int getVidas() const = 0;
 		};

@@ -5,7 +5,7 @@
 #include <SFML/Graphics.hpp>
 #include "Entidade.h"
 #include "Ente.h"
-#include "SingleFrameAnimation.h"
+
 
 namespace Fases {
 	class Fase :
@@ -15,7 +15,6 @@ namespace Fases {
 		Listas::ListaEntidades* listaEntidades;
 		Entidades::Personagens::Inimigo* i1;
 		Entidades::Personagens::Jogador* j1;
-		SingleFrameAnimation Background;
 
 	public:
 		Fase(Entidades::Personagens::Jogador* j1);

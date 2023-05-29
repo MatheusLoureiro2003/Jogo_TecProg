@@ -1,6 +1,5 @@
 #pragma once
 #include "Gerenciador_Grafico.h"
-#include "CoordenadaTL.h"
 #include <SFML/Graphics.hpp>
 
 class Animacao

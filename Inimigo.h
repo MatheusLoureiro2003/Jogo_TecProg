@@ -1,6 +1,8 @@
 #pragma once
 #include "Personagem.h"
 
+#define VELOCIDADE_INIMIGO 50.0f
+
 namespace Entidades {
     namespace Personagens {
         class Inimigo :
