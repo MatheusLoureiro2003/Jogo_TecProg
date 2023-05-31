@@ -1,6 +1,7 @@
 #include "Jogador.h"
 #include <cmath>
 #include "Gerenciador_Eventos.h"
+#include "Colisor.h"
 
 Entidades::Personagens::Jogador::Jogador() :
     Entidades::Personagens::Personagem(200.0f)
