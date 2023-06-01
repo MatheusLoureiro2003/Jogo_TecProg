@@ -1,10 +1,16 @@
 #include "Entidade.h"
 
 
-Entidades::Entidade::Entidade() : body(sf::Vector2f(100.f, 100.f)), x(0), y(0)
+Entidades::Entidade::Entidade(const sf::Vector2f pos, const sf::Vector2f tam) : body(sf::RectangleShape(tam)), pos(pos), tam(tam)
 {
+    body.setPosition(pos);
 }
 
 Entidades::Entidade::~Entidade()
 {
+}
+
+const sf::RectangleShape Entidades::Entidade::getBody()
+{
+    return body;
 }

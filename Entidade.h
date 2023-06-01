@@ -13,9 +13,10 @@ namespace Entidades {
 		int x;
 		int y;
 	public:
-		Entidade();
+		Entidade(const sf::Vector2f pos, const sf::Vector2f tam);
 		~Entidade();
 		virtual void atualizar() = 0;
+		const sf::RectangleShape getBody();
 		//virtual void executar() = 0;
 		void draw() { pGG->draw(body); }
 	};

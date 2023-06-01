@@ -2,12 +2,12 @@
 #include <cmath>
 #include "Gerenciador_Eventos.h"
 
-Entidades::Personagens::Jogador::Jogador() :
-    Entidades::Personagens::Personagem(200.0f)
+Entidades::Personagens::Jogador::Jogador(const sf::Vector2f pos) :
+    Entidades::Personagens::Personagem(VELOCIDADE_JOGADOR, pos, sf::Vector2f(TAMANHO_JOGADOR_X, TAMANHO_JOGADOR_Y))
 {
     static Gerenciadores::Gerenciador_Eventos* pEve = Gerenciadores::Gerenciador_Eventos::getInstance();
     pEve->setJogador(this);
-    body.setPosition(sf::Vector2f(100.f, 200.f));
+    //body.setPosition(pos);//(sf::Vector2f(100.f, 200.f));
 }
 
 Entidades::Personagens::Jogador::~Jogador()
@@ -37,4 +37,9 @@ void Entidades::Personagens::Jogador::atualizar()
     
     relogio.restart();
    
+}
+
+void Entidades::Personagens::Jogador::inicializa()
+{
+    body.setOrigin(sf::Vector2f(tam.x / 2.5f, tam.y / 2.0f));
 }

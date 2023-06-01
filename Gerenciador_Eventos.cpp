@@ -27,6 +27,11 @@ void Gerenciadores::Gerenciador_Eventos::setJogador(Entidades::Personagens::Joga
     this->pj1 = pj1;
 }
 
+//void Gerenciadores::Gerenciador_Eventos::setInimigo(Entidades::Personagens::Inimigo* pI1)
+//{
+ //   this->pI1 = pI1;
+//}
+
 void Gerenciadores::Gerenciador_Eventos::isKeyPressed(const sf::Keyboard::Key tecla)
 {
         if (tecla == sf::Keyboard::A) {

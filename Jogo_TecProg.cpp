@@ -4,6 +4,4 @@
 int main()
 {
     Jogo jogo;
-
-    
 }

@@ -9,12 +9,13 @@ namespace Entidades {
 			sf::Vector2f lastSpeed;
 			bool canWalk;
 			bool toLeft;
+			sf::Vector2f Speed;
 			//bool canWalk;
 			//bool toLeft;
 			sf::Clock relogio;
 			float dt;
 		public:
-			Personagem(const float speed);
+			Personagem(const float speed, const sf::Vector2f pos, const sf::Vector2f tam);
 			virtual ~Personagem();
 			void Walk(const bool toLeft);
 			void Stop();
