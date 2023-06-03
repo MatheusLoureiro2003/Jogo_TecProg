@@ -90,9 +90,6 @@
     <ClCompile Include="Entidade.cpp">
       <Filter>Arquivos de Origem\Entidade</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\OneDrive\Área de Trabalho\Colisor.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Jogo.h">
@@ -136,9 +133,6 @@
     </ClInclude>
     <ClInclude Include="Lista.h">
       <Filter>Arquivos de Cabeçalho\Listas</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\OneDrive\Área de Trabalho\Colisor.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
