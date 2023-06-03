@@ -89,7 +89,11 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <AdditionalIncludeDirectories>C:\Users\andre\source\repos\SFML-2.5.1\include</AdditionalIncludeDirectories>
+=======
+      <AdditionalIncludeDirectories>C:\Users\andre\source\repos\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+>>>>>>> Stashed changes
 =======
       <AdditionalIncludeDirectories>C:\Users\andre\source\repos\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 >>>>>>> Stashed changes
@@ -98,7 +102,11 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <AdditionalLibraryDirectories>C:\Users\andre\source\repos\SFML-2.5.1\lib</AdditionalLibraryDirectories>
+=======
+      <AdditionalLibraryDirectories>C:\Users\andre\source\repos\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+>>>>>>> Stashed changes
       <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-audio-d.lib;sfml-network-d.lib;sfml-system-d.lib</AdditionalDependencies>
 =======
       <AdditionalLibraryDirectories>C:\Users\andre\source\repos\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -115,7 +123,11 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <AdditionalIncludeDirectories>C:\Users\andre\source\repos\SFML-2.5.1\include</AdditionalIncludeDirectories>
+=======
+      <AdditionalIncludeDirectories>C:\Users\andre\source\repos\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+>>>>>>> Stashed changes
 =======
       <AdditionalIncludeDirectories>C:\Users\andre\source\repos\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 >>>>>>> Stashed changes
@@ -126,7 +138,11 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <AdditionalLibraryDirectories>C:\Users\andre\source\repos\SFML-2.5.1\lib</AdditionalLibraryDirectories>
+=======
+      <AdditionalLibraryDirectories>C:\Users\andre\source\repos\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+>>>>>>> Stashed changes
       <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-audio.lib;sfml-network.lib;sfml-system.lib</AdditionalDependencies>
 =======
       <AdditionalLibraryDirectories>C:\Users\andre\source\repos\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
