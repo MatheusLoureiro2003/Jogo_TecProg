@@ -1,8 +1,8 @@
 #include "Personagem.h"
 #include <iostream>
 
-Entidades::Personagens::Personagem::Personagem(const float speed, const sf::Vector2f pos, const sf::Vector2f tam):
-Entidade(pos, tam),
+Entidades::Personagens::Personagem::Personagem(const float speed, const sf::Vector2f pos, const sf::Vector2f tam, const IDs ID):
+Entidade(pos, tam,ID),
 canWalk(false), toLeft(false), relogio(), dt(0.0f),lastSpeed(sf::Vector2f(speed, 0.0f))
 {
 }

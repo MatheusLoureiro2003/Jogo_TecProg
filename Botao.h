@@ -3,6 +3,9 @@
 #include "Ente.h"
 #include "AnimatedText.h"
 #define TEMPO_TROCAR_COR 0.01f
+#define CAMINHO_FONTE "Jogo_TecProg/Assets/ThaleahFat.ttf"
+
+
 class Botao :
     public Ente
 {

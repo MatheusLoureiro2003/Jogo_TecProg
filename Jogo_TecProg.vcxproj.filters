@@ -52,6 +52,24 @@
     <Filter Include="Arquivos de Cabeçalho\Entidade\Personagem">
       <UniqueIdentifier>{7e57ae22-ba55-4fcd-a2f9-3387d5f68653}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Menus">
+      <UniqueIdentifier>{f94f0be8-659a-4b8a-9bd7-a16f1e0be25a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Menus\Botao">
+      <UniqueIdentifier>{7f0d0181-3edd-4b80-b477-eeed3415e90e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Menu">
+      <UniqueIdentifier>{ccd0a33f-1b5d-4860-ba2e-bb9da9ca1658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Menu\Botao">
+      <UniqueIdentifier>{5dee9c12-1f2f-4f1e-80fb-3d0a7df29b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Mundo">
+      <UniqueIdentifier>{5a9db27e-ed97-44e3-9371-a0ee893d73df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Projeteis">
+      <UniqueIdentifier>{13d64755-567d-42cf-ab7d-2bde5bef294c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jogo_TecProg.cpp">
@@ -68,9 +86,6 @@
     </ClCompile>
     <ClCompile Include="Personagem.cpp">
       <Filter>Arquivos de Origem\Entidade\Personagens</Filter>
-    </ClCompile>
-    <ClCompile Include="Ente.cpp">
-      <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="Gerenciador_Grafico.cpp">
       <Filter>Arquivos de Origem\Gerenciadores</Filter>
@@ -90,16 +105,28 @@
     <ClCompile Include="Entidade.cpp">
       <Filter>Arquivos de Origem\Entidade</Filter>
     </ClCompile>
-    <ClCompile Include="AnimatedText.cpp">
-      <Filter>Arquivos de Origem</Filter>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Arquivos de Origem\Menu</Filter>
     </ClCompile>
     <ClCompile Include="Botao.cpp">
-      <Filter>Arquivos de Origem</Filter>
+      <Filter>Arquivos de Origem\Menu\Botao</Filter>
     </ClCompile>
-    <ClCompile Include="Menu.cpp">
-      <Filter>Arquivos de Origem</Filter>
+    <ClCompile Include="AnimatedText.cpp">
+      <Filter>Arquivos de Origem\Menu\Botao</Filter>
     </ClCompile>
     <ClCompile Include="Text.cpp">
+      <Filter>Arquivos de Origem\Menu\Botao</Filter>
+    </ClCompile>
+    <ClCompile Include="Ente.cpp">
+      <Filter>Arquivos de Origem\Mundo</Filter>
+    </ClCompile>
+    <ClCompile Include="Projeteis.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Background.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
@@ -146,19 +173,28 @@
     <ClInclude Include="Lista.h">
       <Filter>Arquivos de Cabeçalho\Listas</Filter>
     </ClInclude>
-    <ClInclude Include="AnimatedText.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="Botao.h">
+    <ClInclude Include="IDs.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="Menu.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
+      <Filter>Arquivos de Cabeçalho\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Botao.h">
+      <Filter>Arquivos de Cabeçalho\Menus\Botao</Filter>
     </ClInclude>
     <ClInclude Include="Text.h">
+      <Filter>Arquivos de Cabeçalho\Menus\Botao</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatedText.h">
+      <Filter>Arquivos de Cabeçalho\Menus\Botao</Filter>
+    </ClInclude>
+    <ClInclude Include="Projeteis.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="IDs.h">
+    <ClInclude Include="MainMenu.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Background.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>

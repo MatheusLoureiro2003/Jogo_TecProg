@@ -13,7 +13,7 @@ namespace Entidades {
 		int x;
 		int y;
 	public:
-		Entidade(const sf::Vector2f pos, const sf::Vector2f tam);
+		Entidade(const sf::Vector2f pos, const sf::Vector2f tam, const IDs ID);
 		~Entidade();
 		virtual void atualizar() = 0;
 		const sf::RectangleShape getBody();

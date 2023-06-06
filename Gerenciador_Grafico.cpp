@@ -50,6 +50,11 @@ sf::RenderWindow* Gerenciadores::Gerenciador_Grafico::getWindow() const
 	return window;
 }
 
+const sf::View Gerenciadores::Gerenciador_Grafico::getCamera()
+{
+	return camera;
+}
+
 const sf::Vector2f Gerenciadores::Gerenciador_Grafico::getWindowSize() const
 {
 	return (sf::Vector2f)window->getSize();
@@ -58,41 +63,36 @@ const sf::Vector2f Gerenciadores::Gerenciador_Grafico::getWindowSize() const
 
 void Gerenciadores::Gerenciador_Grafico::centerView(const sf::Vector2f pos)
 {
-	view.setCenter(pos);
-	window->setView(view);
+	camera.setCenter(pos);
+	window->setView(camera);
 }
 
-sf::Texture* Gerenciadores::Gerenciador_Grafico::loadTexture(const char* path)
+sf::Texture Gerenciadores::Gerenciador_Grafico::loadTexture(const char* path)
 {
-	/* Procura a textura e a liga à uma chave */
-	std::map<const char*, sf::Texture*>::iterator it = texturesMap.begin();
-	while (it != texturesMap.end()) {
-		if (!strcmp(it->first, path))
-			return it->second;
-		it++;
-	}
-
-	/* Se não achar a textura, carrega uma nova */
-	sf::Texture* tex = new sf::Texture();
-
-	if (!tex->loadFromFile(path)) {
-		std::cout << "ERROR loading file " << path << std::endl;
+	sf::Texture textura;
+	if (!textura.loadFromFile(path)) {
+		std::cout << "ERRO::Gerenciador::Gerenciador_Grafico::nao foi possivel encontrar o caminho da textura - " << path << std::endl;
 		exit(1);
 	}
-
-	texturesMap.insert(std::pair<const char*, sf::Texture*>(path, tex));
-
-	return tex;
+	return textura;
+	}
 }
 
 sf::Font Gerenciadores::Gerenciador_Grafico::loadFont(const char* path)
 {
 	sf::Font fonte;
 	if (!fonte.loadFromFile(path)) {
-		throw("ERROR::Jungle::Gerenciador::GerenciadorGrafico::nao foi possivel encontrar o caminho da fonte");
+		throw("ERROR::Gerenciador::Gerenciador_Grafico::nao foi possivel encontrar o caminho da fonte");
 	}
 	return fonte;
 }
+
+void Gerenciadores::Gerenciador_Grafico::resetWindow()
+{
+	camera.setCenter(TELA_X / 2.0f, TELA_Y / 2.0f);
+	window->setView(camera);
+}
+
 
 
 

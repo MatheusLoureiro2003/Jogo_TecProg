@@ -1,7 +1,7 @@
 #include "Botao.h"
 
 Botao::Botao(const std::string info, const sf::Vector2f tam, const sf::Vector2f pos, const sf::Color corlorSelected):
-selected(false), pos(pos), tam(tam), Clock(), 
+selected(false), pos(pos), tam(tam), Clock(), text(pGG->loadFont(CAMINHO_FONTE), info),
 timeChangeColor(TEMPO_TROCAR_COR),time(0.0f),colorSelected(corlorSelected)
 {
 	TextBox.setPosition(pos);
