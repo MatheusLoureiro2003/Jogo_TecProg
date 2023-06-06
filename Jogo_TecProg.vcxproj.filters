@@ -90,8 +90,17 @@
     <ClCompile Include="Entidade.cpp">
       <Filter>Arquivos de Origem\Entidade</Filter>
     </ClCompile>
-    <ClCompile Include="Obstaculo.cpp">
-      <Filter>Arquivos de Origem\Entidade</Filter>
+    <ClCompile Include="AnimatedText.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Botao.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -137,8 +146,20 @@
     <ClInclude Include="Lista.h">
       <Filter>Arquivos de Cabeçalho\Listas</Filter>
     </ClInclude>
-    <ClInclude Include="Obstaculo.h">
-      <Filter>Arquivos de Cabeçalho\Entidade</Filter>
+    <ClInclude Include="AnimatedText.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Botao.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="IDs.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

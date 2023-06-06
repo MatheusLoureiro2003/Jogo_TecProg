@@ -85,28 +85,16 @@ sf::Texture* Gerenciadores::Gerenciador_Grafico::loadTexture(const char* path)
 	return tex;
 }
 
-sf::Font* Gerenciadores::Gerenciador_Grafico::loadFont(const char* path)
+sf::Font Gerenciadores::Gerenciador_Grafico::loadFont(const char* path)
 {
-	/* Tenta achar a fonte existente e a liga à uma chave */
-	std::map<const char*, sf::Font*>::iterator it = fontsMap.begin();
-	while (it != fontsMap.end()) {
-		if (!strcmp(it->first, path))
-			return it->second;
-		it++;
+	sf::Font fonte;
+	if (!fonte.loadFromFile(path)) {
+		throw("ERROR::Jungle::Gerenciador::GerenciadorGrafico::nao foi possivel encontrar o caminho da fonte");
 	}
-
-	/* Se não achar textura, cria uma nova */
-	sf::Font* font = new sf::Font();
-
-	if (!font->loadFromFile(path)) {
-		std::cout << "ERROR loading file " << path << std::endl;
-		exit(1);
-	}
-
-	fontsMap.insert(std::pair<const char*, sf::Font*>(path, font));
-
-	return font;
+	return fonte;
 }
+
+
 
 
 

@@ -29,6 +29,8 @@ namespace Gerenciadores {
 
 		void draw(sf::RectangleShape body) { window->draw(body); }
 
+		void draw(sf::Text text) { window->draw(text); }
+
 		float updateDeltaTime();
 		
 		const sf::Vector2f getWindowSize() const;
