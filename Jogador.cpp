@@ -3,10 +3,9 @@
 #include "Gerenciador_Eventos.h"
 
 Entidades::Personagens::Jogador::Jogador(const sf::Vector2f pos,bool first) :
-    Entidades::Personagens::Personagem(VELOCIDADE_JOGADOR, pos, sf::Vector2f(TAMANHO_JOGADOR_X, TAMANHO_JOGADOR_Y), IDs::jogador), first(first)
+    Entidades::Personagens::Personagem(VELOCIDADE_JOGADOR, pos, sf::Vector2f(TAMANHO_JOGADOR_X, TAMANHO_JOGADOR_Y), IDs::jogador), 
+    first(first)
 {
-    static Gerenciadores::Gerenciador_Eventos* pEve = Gerenciadores::Gerenciador_Eventos::getInstance();
-    pEve->setJogador(this);
     //body.setPosition(pos);//(sf::Vector2f(100.f, 200.f));
 }
 

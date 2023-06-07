@@ -1,7 +1,7 @@
 #pragma once
 #include "Estado.h"
 #include "Gerenciador_Grafico.h"
-#include "Construtor_Estado.h"
+//#include "Construtor_Estado.h"
 #include "Fase.h"
 
 class EstadoPlay :

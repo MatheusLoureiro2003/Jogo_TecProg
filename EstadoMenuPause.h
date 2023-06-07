@@ -1,7 +1,7 @@
 #pragma once
 #include "Estado.h"
 #include "MenuPause.h"
-#include "Gerenciador_Estados.h"
+//#include "Gerenciador_Estados.h"
 
 namespace Gerenciadores {
     class Gerenciador_Estados;

@@ -22,9 +22,10 @@ Gerenciadores::Gerenciador_Eventos::~Gerenciador_Eventos()
 {
 }
 
-void Gerenciadores::Gerenciador_Eventos::setJogador(Entidades::Personagens::Jogador* pj1)
+void Gerenciadores::Gerenciador_Eventos::setJogador(Entidades::Personagens::Jogador* pj1, Entidades::Personagens::Jogador* pj2)
 {
     this->pj1 = pj1;
+    this->pj2 = pj2;
 }
 
 //void Gerenciadores::Gerenciador_Eventos::setInimigo(Entidades::Personagens::Inimigo* pI1)
@@ -34,7 +35,7 @@ void Gerenciadores::Gerenciador_Eventos::setJogador(Entidades::Personagens::Joga
 
 void Gerenciadores::Gerenciador_Eventos::isKeyPressed(const sf::Keyboard::Key tecla, bool first)
 {
-    if (first = false) {
+    if (first) {
         if (tecla == sf::Keyboard::A) {
             pj1->Walk(true);
         }
@@ -46,11 +47,11 @@ void Gerenciadores::Gerenciador_Eventos::isKeyPressed(const sf::Keyboard::Key te
         }
     }
     else {
-        if (tecla == sf::Keyboard::Home) {
-            pj1->Walk(true);
+        if (tecla == sf::Keyboard::Left) {
+            pj2->Walk(true);
         }
-        else if (tecla == sf::Keyboard::End) {
-            pj1->Walk(false);
+        else if (tecla == sf::Keyboard::Right) {
+            pj2->Walk(false);
         }
         else if (tecla == sf::Keyboard::Escape) {
             pGG->closeWindow();
@@ -58,11 +59,20 @@ void Gerenciadores::Gerenciador_Eventos::isKeyPressed(const sf::Keyboard::Key te
     }
 }
 
-void Gerenciadores::Gerenciador_Eventos::isKeyLoose(const sf::Keyboard::Key tecla)
+void Gerenciadores::Gerenciador_Eventos::isKeyLoose(const sf::Keyboard::Key tecla, bool first)
 {
+    if (first) {
         if (tecla == sf::Keyboard::D || tecla == sf::Keyboard::A) {
             pj1->Stop();
         }
+    }
+    else
+    {
+        if (tecla == sf::Keyboard::Left || tecla == sf::Keyboard::Right) {
+            pj2->Stop();
+        }
+    } 
+    
 }
 
 void Gerenciadores::Gerenciador_Eventos::executar()
@@ -71,13 +81,16 @@ void Gerenciadores::Gerenciador_Eventos::executar()
     while (pGG->getWindow()->pollEvent(evento)) {
         if (evento.type == sf::Event::KeyPressed) {
             isKeyPressed(evento.key.code, pj1->getFirst());
+            isKeyPressed(evento.key.code, pj2->getFirst());
         }
         else if (evento.type == sf::Event::KeyReleased) {
-            isKeyLoose(evento.key.code);
+            isKeyLoose(evento.key.code, pj1->getFirst());
+            isKeyLoose(evento.key.code, pj2->getFirst());
         }
         else if (evento.type == sf::Event::Closed) {
             pGG->closeWindow();
         }
     }
 }
+
 

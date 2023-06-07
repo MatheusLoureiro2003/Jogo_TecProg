@@ -65,3 +65,4 @@ Estado* Construtor_Estado::createState(const IDs ID)
     return estado;
 }
 
+

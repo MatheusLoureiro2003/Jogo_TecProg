@@ -5,7 +5,7 @@
 #include <SFML/Graphics.hpp>
 #include "Entidade.h"
 #include "Ente.h"
-
+namespace Gerenciadores { class Gerenciador_Evento; }
 
 namespace Fases {
 	class Fase :
