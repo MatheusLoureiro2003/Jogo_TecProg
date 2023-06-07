@@ -1,33 +1,26 @@
 #pragma once
-//Construtor
-#include "Construtor_Estado.h"
-
-//Gerenciadores
 #include "Gerenciador_Grafico.h"
-
-//Pilha
 #include <stack>
+#include "Construtor_Estado.h"
+#include "Estado.h"
 
 namespace Gerenciadores {
 	class Gerenciador_Estados
 	{
     private:
-        std::stack<Estado::Estado*> pilhaEstados;
-        Construtor::ConstrutorEstado construtorEstado;
-        static GerenciadorMusica* pMusica;
+        std::stack<Estado*> pilhaEstados;
+        
+        //Construtor_Estado construtorEstado;
 
         //padrão de projeto singleton
-        static GerenciadorEstado* pGerenciadorEstado;
-        GerenciadorEstado();
-
-        void desativarObservadores();
-        void ativarObservadores();
+        static Gerenciador_Estados* Instance;
+        Gerenciador_Estados();
     public:
-        ~GerenciadorEstado();
-        static GerenciadorEstado* getGerenciadorEstado();
+        ~Gerenciador_Estados();
+        static Gerenciador_Estados* getInstance();
         void executar();
-        void addEstado(const IDs::IDs ID);
-        void removerEstado();
-        Estado::Estado* getEstadoAtual();
+        void addState(const IDs ID);
+        void removeState();
+        Estado* getCurrentState();
 	};
 }

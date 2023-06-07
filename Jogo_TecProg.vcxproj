@@ -150,6 +150,7 @@
     <ClCompile Include="Background.cpp" />
     <ClCompile Include="Botao.cpp" />
     <ClCompile Include="Construtor_Estado.cpp" />
+    <ClCompile Include="Construtor_Fase.cpp" />
     <ClCompile Include="Ente.cpp" />
     <ClCompile Include="Entidade.cpp" />
     <ClCompile Include="Estado.cpp" />
@@ -180,6 +181,7 @@
     <ClInclude Include="Background.h" />
     <ClInclude Include="Botao.h" />
     <ClInclude Include="Construtor_Estado.h" />
+    <ClInclude Include="Construtor_Fase.h" />
     <ClInclude Include="Elemento.h" />
     <ClInclude Include="Ente.h" />
     <ClInclude Include="Entidade.h" />

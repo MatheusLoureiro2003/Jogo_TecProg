@@ -19,7 +19,7 @@ namespace Gerenciadores {
 		~Gerenciador_Eventos();
 		void setJogador(Entidades::Personagens::Jogador* pj1);
 		//void setInimigo(Entidades::Personagens::Inimigo* pI1);
-		void isKeyPressed(const sf::Keyboard::Key tecla);
+		void isKeyPressed(const sf::Keyboard::Key tecla, bool first);
 		void isKeyLoose(const sf::Keyboard::Key tecla);
 		void executar();
 	};

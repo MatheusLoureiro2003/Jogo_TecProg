@@ -32,8 +32,9 @@ void Gerenciadores::Gerenciador_Eventos::setJogador(Entidades::Personagens::Joga
  //   this->pI1 = pI1;
 //}
 
-void Gerenciadores::Gerenciador_Eventos::isKeyPressed(const sf::Keyboard::Key tecla)
+void Gerenciadores::Gerenciador_Eventos::isKeyPressed(const sf::Keyboard::Key tecla, bool first)
 {
+    if (first = false) {
         if (tecla == sf::Keyboard::A) {
             pj1->Walk(true);
         }
@@ -43,7 +44,18 @@ void Gerenciadores::Gerenciador_Eventos::isKeyPressed(const sf::Keyboard::Key te
         else if (tecla == sf::Keyboard::Escape) {
             pGG->closeWindow();
         }
-
+    }
+    else {
+        if (tecla == sf::Keyboard::Home) {
+            pj1->Walk(true);
+        }
+        else if (tecla == sf::Keyboard::End) {
+            pj1->Walk(false);
+        }
+        else if (tecla == sf::Keyboard::Escape) {
+            pGG->closeWindow();
+        }
+    }
 }
 
 void Gerenciadores::Gerenciador_Eventos::isKeyLoose(const sf::Keyboard::Key tecla)
@@ -58,7 +70,7 @@ void Gerenciadores::Gerenciador_Eventos::executar()
     sf::Event evento;
     while (pGG->getWindow()->pollEvent(evento)) {
         if (evento.type == sf::Event::KeyPressed) {
-            isKeyPressed(evento.key.code);
+            isKeyPressed(evento.key.code, pj1->getFirst());
         }
         else if (evento.type == sf::Event::KeyReleased) {
             isKeyLoose(evento.key.code);

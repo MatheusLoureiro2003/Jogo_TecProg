@@ -15,6 +15,7 @@ namespace Fases {
 		Listas::ListaEntidades* listaEntidades;
 		Entidades::Personagens::Inimigo* i1;
 		Entidades::Personagens::Jogador* j1;
+		Entidades::Personagens::Jogador* j2;
 
 	public:
 		Fase();

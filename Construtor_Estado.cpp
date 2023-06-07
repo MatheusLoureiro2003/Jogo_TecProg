@@ -1,43 +1,37 @@
 #include "Construtor_Estado.h"
 
-Construtor::Construtor_Estado::Construtor_Estado()
+Construtor_Estado::Construtor_Estado()
 {
 }
 
-Construtor::Construtor_Estado::~Construtor_Estado()
+Construtor_Estado::~Construtor_Estado()
 {
 }
 
-Estado* Construtor::Construtor_Estado::createPlayState(const IDs ID)
+Estado* Construtor_Estado::createPlayState(const IDs ID)
 {
     Fases::Fase* fase = nullptr;
     Construtor::Construtor_Fase construtorFase;
 
-    fase = construtorFase.criarFase(ID);
+    //fase = construtorFase;// .criarFase(ID);
 
     EstadoPlay* estadoPlay = new EstadoPlay(ID, fase);
     return static_cast<Estado*>(estadoPlay);
 }
 
-Estado* Construtor::Construtor_Estado::createMainMenu()
+Estado* Construtor_Estado::createMainMenu()
 {
     Estado* estado = static_cast<Estado*>(new EstadoMainMenu());
     return estado;
 }
 
-Estado* Construtor::Construtor_Estado::createMenuPause()
+Estado* Construtor_Estado::createMenuPause()
 {
     Estado* estado = static_cast<Estado*>(new EstadoMenuPause());
     return estado;
 }
 
-//Estado* Construtor::Construtor_Estado::createMenuMainOption()
-{
-    Estado* estado = static_cast<Estado*>(new EstadoMenuMainOption());
-    return estado;
-}
-
-Estado* Construtor::Construtor_Estado::createState(const IDs ID)
+Estado* Construtor_Estado::createState(const IDs ID)
 {
     Estado* estado = nullptr;
     switch (ID)

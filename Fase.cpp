@@ -3,7 +3,8 @@
 
 Fases::Fase::Fase():Ente(ID)
 {
-	j1 = new Entidades::Personagens::Jogador(sf::Vector2f(100.f, 200.f));
+	j1 = new Entidades::Personagens::Jogador(sf::Vector2f(100.f, 200.f),false);
+	j2 = new Entidades::Personagens::Jogador(sf::Vector2f(100.f, 200.f), true);
 	listaEntidades = new Listas::ListaEntidades();
 	i1 = new Entidades::Personagens::Inimigo(sf::Vector2f(100.f, 200.f), sf::Vector2f(100.f, 200.f),j1);
 
@@ -18,6 +19,7 @@ Fases::Fase::~Fase()
 void Fases::Fase::inicializaElementos()
 {
 	listaEntidades->addEntidade(static_cast<Entidades::Entidade*>(j1));
+	listaEntidades->addEntidade(static_cast<Entidades::Entidade*>(j2));
 	listaEntidades->addEntidade(static_cast<Entidades::Entidade*>(i1));
 }
 

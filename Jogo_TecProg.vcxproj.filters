@@ -171,6 +171,9 @@
     <ClCompile Include="Construtor_Estado.cpp">
       <Filter>Arquivos de Origem\Contrutores</Filter>
     </ClCompile>
+    <ClCompile Include="Construtor_Fase.cpp">
+      <Filter>Arquivos de Origem\Contrutores</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Jogo.h">
@@ -264,6 +267,9 @@
       <Filter>Arquivos de Cabeçalho\Menus</Filter>
     </ClInclude>
     <ClInclude Include="Construtor_Estado.h">
+      <Filter>Arquivos de Cabeçalho\Contrutores</Filter>
+    </ClInclude>
+    <ClInclude Include="Construtor_Fase.h">
       <Filter>Arquivos de Cabeçalho\Contrutores</Filter>
     </ClInclude>
   </ItemGroup>
