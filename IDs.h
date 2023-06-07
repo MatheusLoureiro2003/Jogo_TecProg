@@ -14,6 +14,7 @@ enum class IDs
     botao_voltar,
     menu_principal,
     menu_pausa,
-    menu_opcao
+    menu_opcao,
+    fundo_normal
 };
 

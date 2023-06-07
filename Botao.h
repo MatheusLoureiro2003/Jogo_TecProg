@@ -23,7 +23,7 @@ protected:
 
     const sf::Vector2f getTextSize() const;
 public:
-    Botao(const std::string info, const sf::Vector2f tam, const sf::Vector2f pos, const sf::Color corSelecionado);//const IDs::IDs ID
+    Botao(const std::string info, const sf::Vector2f tam, const sf::Vector2f pos, const IDs ID, const sf::Color corSelecionado);//const IDs::IDs ID
     virtual ~Botao();
     virtual void draw();
     void updateText();

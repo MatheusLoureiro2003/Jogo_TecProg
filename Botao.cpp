@@ -1,6 +1,7 @@
 #include "Botao.h"
 
-Botao::Botao(const std::string info, const sf::Vector2f tam, const sf::Vector2f pos, const sf::Color corlorSelected):
+Botao::Botao(const std::string info, const sf::Vector2f tam, const sf::Vector2f pos, const IDs ID, const sf::Color corlorSelected):
+Ente(ID),
 selected(false), pos(pos), tam(tam), Clock(), text(pGG->loadFont(CAMINHO_FONTE), info),
 timeChangeColor(TEMPO_TROCAR_COR),time(0.0f),colorSelected(corlorSelected)
 {
@@ -83,6 +84,6 @@ const sf::Vector2f Botao::getPos() const
 }
 const sf::Vector2f Botao::getTextSize() const
 {
-	return sf::Vector2f(text.getText().getGlobalBounds().width, text.getText().getGlobalBounds().height);
-
+    return sf::Vector2f(text.getText().getGlobalBounds().width, text.getText().getGlobalBounds().height);
+}
 

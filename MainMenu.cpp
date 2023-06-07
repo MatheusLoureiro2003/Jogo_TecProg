@@ -1,7 +1,7 @@
 #include "MainMenu.h"
 
 MainMenu::MainMenu() : Menu(IDs::menu_principal, sf::Vector2f(TAMANHO_BOTAO_X, TAMANHO_BOTAO_Y), "CaçadorEspacial", 180),
-leave(false), fundo()
+leave(false), fundo(IDs::fundo_normal)
 {
     MenuName.setPos(sf::Vector2f(WindowSize.x / 2.0f - MenuName.getTam().x / 2.0f, 25.0f));
     MenuName.setColorText(sf::Color{0, 200, 0});

@@ -4,6 +4,7 @@
 #include <iostream>
 
 
+
 Gerenciadores::Gerenciador_Grafico* Gerenciadores::Gerenciador_Grafico::instance = nullptr;
 
 Gerenciadores::Gerenciador_Grafico* Gerenciadores::Gerenciador_Grafico::getInstance()
@@ -75,7 +76,7 @@ sf::Texture Gerenciadores::Gerenciador_Grafico::loadTexture(const char* path)
 		exit(1);
 	}
 	return textura;
-	}
+	
 }
 
 sf::Font Gerenciadores::Gerenciador_Grafico::loadFont(const char* path)

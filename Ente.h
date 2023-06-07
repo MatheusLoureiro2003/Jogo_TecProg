@@ -1,5 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include <iostream>
 #include "Gerenciador_Grafico.h"
 #include "IDs.h"
 

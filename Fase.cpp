@@ -1,7 +1,7 @@
 #include "Fase.h"
 
 
-Fases::Fase::Fase()
+Fases::Fase::Fase():Ente(ID)
 {
 	j1 = new Entidades::Personagens::Jogador(sf::Vector2f(100.f, 200.f));
 	listaEntidades = new Listas::ListaEntidades();
