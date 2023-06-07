@@ -1,4 +1,12 @@
 #pragma once
+//Construtor
+#include "Construtor_Estado.h"
+
+//Gerenciadores
+#include "Gerenciador_Grafico.h"
+
+//Pilha
+#include <stack>
 
 namespace Gerenciadores {
 	class Gerenciador_Estados

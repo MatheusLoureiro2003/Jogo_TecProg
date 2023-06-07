@@ -70,6 +70,21 @@
     <Filter Include="Arquivos de Cabeçalho\Projeteis">
       <UniqueIdentifier>{13d64755-567d-42cf-ab7d-2bde5bef294c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Estados">
+      <UniqueIdentifier>{9b9e83f2-c631-4dfb-bc5d-99e8cb3468b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Estados">
+      <UniqueIdentifier>{12d4546c-3e10-445c-a704-98ca03da318d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Projeteis">
+      <UniqueIdentifier>{588a20d7-4b90-4259-867c-59f34e0871ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Contrutores">
+      <UniqueIdentifier>{063068d0-8135-4a37-85fa-eaa1ae95bb39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Contrutores">
+      <UniqueIdentifier>{085d8f93-eba4-446d-b215-201949f5b08f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jogo_TecProg.cpp">
@@ -120,17 +135,41 @@
     <ClCompile Include="Ente.cpp">
       <Filter>Arquivos de Origem\Mundo</Filter>
     </ClCompile>
-    <ClCompile Include="Projeteis.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="MainMenu.cpp">
-      <Filter>Arquivos de Origem</Filter>
+    <ClCompile Include="Estado.cpp">
+      <Filter>Arquivos de Origem\Estados</Filter>
     </ClCompile>
     <ClCompile Include="Background.cpp">
-      <Filter>Arquivos de Origem</Filter>
+      <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
     </ClCompile>
     <ClCompile Include="Layer.cpp">
-      <Filter>Arquivos de Origem</Filter>
+      <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>Arquivos de Origem\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Gerenciador_Estados.cpp">
+      <Filter>Arquivos de Origem\Gerenciadores</Filter>
+    </ClCompile>
+    <ClCompile Include="Projeteis.cpp">
+      <Filter>Arquivos de Origem\Projeteis</Filter>
+    </ClCompile>
+    <ClCompile Include="EstadoMainMenu.cpp">
+      <Filter>Arquivos de Origem\Estados</Filter>
+    </ClCompile>
+    <ClCompile Include="EstadoPlay.cpp">
+      <Filter>Arquivos de Origem\Estados</Filter>
+    </ClCompile>
+    <ClCompile Include="EstadoMenuPause.cpp">
+      <Filter>Arquivos de Origem\Estados</Filter>
+    </ClCompile>
+    <ClCompile Include="EstadoMenuMainOption.cpp">
+      <Filter>Arquivos de Origem\Estados</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuPause.cpp">
+      <Filter>Arquivos de Origem\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Construtor_Estado.cpp">
+      <Filter>Arquivos de Origem\Contrutores</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -191,17 +230,41 @@
     <ClInclude Include="AnimatedText.h">
       <Filter>Arquivos de Cabeçalho\Menus\Botao</Filter>
     </ClInclude>
-    <ClInclude Include="Projeteis.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="MainMenu.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
+    <ClInclude Include="Estado.h">
+      <Filter>Arquivos de Cabeçalho\Estados</Filter>
     </ClInclude>
     <ClInclude Include="Background.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
+      <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
     </ClInclude>
     <ClInclude Include="Layer.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
+      <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
+    </ClInclude>
+    <ClInclude Include="Projeteis.h">
+      <Filter>Arquivos de Cabeçalho\Projeteis</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>Arquivos de Cabeçalho\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="EstadoPlay.h">
+      <Filter>Arquivos de Cabeçalho\Estados</Filter>
+    </ClInclude>
+    <ClInclude Include="EstadoMainMenu.h">
+      <Filter>Arquivos de Cabeçalho\Estados</Filter>
+    </ClInclude>
+    <ClInclude Include="Gerenciador_Estados.h">
+      <Filter>Arquivos de Cabeçalho\Gerenciadores</Filter>
+    </ClInclude>
+    <ClInclude Include="EstadoMenuPause.h">
+      <Filter>Arquivos de Cabeçalho\Estados</Filter>
+    </ClInclude>
+    <ClInclude Include="EstadoMenuMainOption.h">
+      <Filter>Arquivos de Cabeçalho\Estados</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuPause.h">
+      <Filter>Arquivos de Cabeçalho\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Construtor_Estado.h">
+      <Filter>Arquivos de Cabeçalho\Contrutores</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

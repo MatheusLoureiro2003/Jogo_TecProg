@@ -15,6 +15,12 @@ enum class IDs
     menu_principal,
     menu_pausa,
     menu_opcao,
-    fundo_normal
+    fundo_normal,
+    estado_menu_principal,
+    estado_menu_pausa,
+    estado_menu_opcaoPrincipal,
+    jogar_cyberpunk,
+    jogar_deserto,
+    jogar_espaco
 };
 
