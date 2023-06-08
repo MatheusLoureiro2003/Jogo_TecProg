@@ -7,6 +7,8 @@
 #include "ListaEntidades.h"
 #include "Fase.h"
 #include "Gerenciador_Eventos.h"
+#include "Gerenciador_Grafico.h"
+#include "Gerenciador_Estados.h"
 
 
 
@@ -15,6 +17,7 @@ class Jogo
 private:
 	static Gerenciadores::Gerenciador_Eventos* pEve;
 	static Gerenciadores::Gerenciador_Grafico* pGG;
+	static Gerenciadores::Gerenciador_Estados* pGE;
 	
 	
 	sf::Clock clock;
@@ -23,10 +26,11 @@ private:
 	
 	Listas::ListaEntidades* LEs;
 	Fases::Fase* fase1;
+
+	void inicializa();
 public:
 	Jogo();
 	~Jogo();
-
 	void Executar();
 
 };

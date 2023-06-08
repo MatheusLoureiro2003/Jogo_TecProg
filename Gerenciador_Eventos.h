@@ -2,6 +2,7 @@
 #include "jogador.h"
 #include "Inimigo.h"
 #include "Gerenciador_Grafico.h"
+#include "Gerenciador_Estados.h"
 
 namespace Gerenciadores {
 	class Gerenciador_Eventos
@@ -10,6 +11,7 @@ namespace Gerenciadores {
 
 		static Gerenciador_Eventos* instance;
 		static Gerenciador_Grafico* pGG;
+		static Gerenciador_Estados* pGE;
 		Entidades::Personagens::Jogador* pj1;
 		Entidades::Personagens::Jogador* pj2;
 		//Entidades::Personagens::Inimigo* pI1;

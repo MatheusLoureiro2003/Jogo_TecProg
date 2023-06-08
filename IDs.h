@@ -21,6 +21,8 @@ enum class IDs
     estado_menu_opcaoPrincipal,
     jogar_cyberpunk,
     jogar_deserto,
-    jogar_espaco
+    jogar_espaco,
+    fase_Cyberpunk,
+    fundo_Cyberpunk
 };
 

@@ -13,7 +13,7 @@ Estado* Construtor_Estado::createPlayState(const IDs ID)
     Fases::Fase* fase = nullptr;
     Construtor::Construtor_Fase construtorFase;
 
-    //fase = construtorFase;// .criarFase(ID);
+    fase = construtorFase.createFase(ID);
 
     EstadoPlay* estadoPlay = new EstadoPlay(ID, fase);
     return static_cast<Estado*>(estadoPlay);

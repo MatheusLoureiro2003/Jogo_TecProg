@@ -1,5 +1,6 @@
 #include "Construtor_Fase.h"
 namespace Construtor {
+
     Construtor_Fase::Construtor_Fase()
     {
     }
@@ -15,7 +16,7 @@ namespace Construtor {
         {
         case (IDs::jogar_cyberpunk):
         {
-           // fase = createCyberpunk();
+           fase = createCyberPunk();
         }
         break;
         case (IDs::jogar_deserto):
@@ -35,21 +36,21 @@ namespace Construtor {
         }
         break;
         }
-        //fase->criarFundo();
-        //fase->criarMapa();
+        fase->createBackground();
+        fase->createMap();
         return fase;
     }
-    /*
-    Fases::Fase* Construtor_Fase::criarCyberPunk()
+    
+    Fases::Fase* Construtor_Fase::createCyberPunk()
     {
-        Fases::Fase* fase = static_cast<Fases::Fase*>(new Fases::CyberPunk());
+        Fases::Fase* fase = static_cast<Fases::Fase*>(new Fases::Cyberpunk());
         if (fase == nullptr) {
             std::cout << "Construtor::Construtor_Fase::nao foi possivel criar Fase cyberpunk" << std::endl;
             exit(1);
         }
         return fase;
     }
-
+    /*
     Fases::Fase* Construtor_Fase::criarDeserto()
     {
         Fases::Fase* fase = static_cast<Fases::Fase*>(new Fases::Deserto());

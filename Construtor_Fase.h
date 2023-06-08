@@ -1,10 +1,11 @@
 #pragma once
-#include "Fase.h"
+#include "Cyberpunk.h"
+
 namespace Construtor {
     class Construtor_Fase
     {
     private:
-        Fases::Fase* criarCyberPunk();
+        Fases::Fase* createCyberPunk();
         Fases::Fase* criarDeserto();
         Fases::Fase* criarEspaco();
     public:

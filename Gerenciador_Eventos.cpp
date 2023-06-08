@@ -1,10 +1,12 @@
 #include "Gerenciador_Eventos.h"
+
 #include <cstring>
 #include <iostream>
 
 Gerenciadores::Gerenciador_Eventos* Gerenciadores::Gerenciador_Eventos::instance = nullptr;
 
 Gerenciadores::Gerenciador_Grafico* Gerenciadores::Gerenciador_Eventos::pGG = Gerenciadores::Gerenciador_Grafico::getInstance();
+Gerenciadores::Gerenciador_Estados* Gerenciadores::Gerenciador_Eventos::pGE = Gerenciadores::Gerenciador_Estados::getInstance();
 
 Gerenciadores::Gerenciador_Eventos* Gerenciadores::Gerenciador_Eventos::getInstance()
     {
