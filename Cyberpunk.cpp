@@ -12,11 +12,11 @@ namespace Fases {
 
 	void Cyberpunk::createBackground()
 	{
-		background.addLayer("", 0.0f);
-		background.addLayer("", 0.1f);
-		background.addLayer("", 0.3f);
-		background.addLayer("", 0.5f);
-		background.addLayer("", 1.0f);
+		background.addLayer("./Assets/Background/Night/1.png", 0.0f);
+		background.addLayer("./Assets/Background/Night/2.png", 0.1f);
+		background.addLayer("./Assets/Background/Night/3.png", 0.3f);
+		background.addLayer("./Assets/Background/Night/4.png", 0.5f);
+		background.addLayer("./Assets/Background/Night/5.png", 1.0f);
 	}
 
 	void Cyberpunk::createMap()

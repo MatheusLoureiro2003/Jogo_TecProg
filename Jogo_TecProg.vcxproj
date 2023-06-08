@@ -173,6 +173,7 @@
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="MenuPause.cpp" />
+    <ClCompile Include="Observer.cpp" />
     <ClCompile Include="Personagem.cpp" />
     <ClCompile Include="Projeteis.cpp" />
     <ClCompile Include="Text.cpp" />
@@ -208,6 +209,7 @@
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="MenuPause.h" />
+    <ClInclude Include="Observer.h" />
     <ClInclude Include="Personagem.h" />
     <ClInclude Include="Projeteis.h" />
     <ClInclude Include="resource.h" />
