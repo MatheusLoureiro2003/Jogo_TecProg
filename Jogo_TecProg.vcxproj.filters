@@ -85,6 +85,12 @@
     <Filter Include="Arquivos de Origem\Contrutores">
       <UniqueIdentifier>{085d8f93-eba4-446d-b215-201949f5b08f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Observadores">
+      <UniqueIdentifier>{d87a9fcf-c455-4d50-a03b-d95b420c4d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Observadores">
+      <UniqueIdentifier>{6d08fd91-8f61-47be-b232-68178bd40370}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jogo_TecProg.cpp">
@@ -173,6 +179,24 @@
     </ClCompile>
     <ClCompile Include="Construtor_Fase.cpp">
       <Filter>Arquivos de Origem\Contrutores</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer.cpp">
+      <Filter>Arquivos de Origem\Observadores</Filter>
+    </ClCompile>
+    <ClCompile Include="ObserverFase.cpp">
+      <Filter>Arquivos de Origem\Observadores</Filter>
+    </ClCompile>
+    <ClCompile Include="ListaObserver.cpp">
+      <Filter>Arquivos de Origem\Lista</Filter>
+    </ClCompile>
+    <ClCompile Include="Construtor_Entidades.cpp">
+      <Filter>Arquivos de Origem\Contrutores</Filter>
+    </ClCompile>
+    <ClCompile Include="Cyberpunk.cpp">
+      <Filter>Arquivos de Origem\Fase</Filter>
+    </ClCompile>
+    <ClCompile Include="ObserverPlayer.cpp">
+      <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -271,6 +295,24 @@
     </ClInclude>
     <ClInclude Include="Construtor_Fase.h">
       <Filter>Arquivos de Cabeçalho\Contrutores</Filter>
+    </ClInclude>
+    <ClInclude Include="ListaObserver.h">
+      <Filter>Arquivos de Cabeçalho\Listas</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>Arquivos de Cabeçalho\Observadores</Filter>
+    </ClInclude>
+    <ClInclude Include="ObserverFase.h">
+      <Filter>Arquivos de Cabeçalho\Observadores</Filter>
+    </ClInclude>
+    <ClInclude Include="Cyberpunk.h">
+      <Filter>Arquivos de Cabeçalho\Fases</Filter>
+    </ClInclude>
+    <ClInclude Include="Construtor_Entidades.h">
+      <Filter>Arquivos de Cabeçalho\Contrutores</Filter>
+    </ClInclude>
+    <ClInclude Include="ObserverPlayer.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

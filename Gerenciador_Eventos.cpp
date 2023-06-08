@@ -1,7 +1,6 @@
 #include "Gerenciador_Eventos.h"
+#include "Gerenciador_Estados.h"
 
-#include <cstring>
-#include <iostream>
 
 Gerenciadores::Gerenciador_Eventos* Gerenciadores::Gerenciador_Eventos::instance = nullptr;
 
@@ -23,7 +22,19 @@ Gerenciadores::Gerenciador_Eventos::Gerenciador_Eventos()
 Gerenciadores::Gerenciador_Eventos::~Gerenciador_Eventos()
 {
 }
-
+void Gerenciadores::Gerenciador_Eventos::addObserver(Observadores::Observer* observador)
+{
+    listaObservador->addObserver(observador);
+}
+void Gerenciadores::Gerenciador_Eventos::removeObserver(Observadores::Observer* observador)
+{
+    listaObservador->removeObserver(observador);
+}
+void Gerenciadores::Gerenciador_Eventos::removeObserver(int pos)
+{
+    listaObservador->removeObserver(pos);
+}
+/*
 void Gerenciadores::Gerenciador_Eventos::setJogador(Entidades::Personagens::Jogador* pj1, Entidades::Personagens::Jogador* pj2)
 {
     this->pj1 = pj1;
@@ -76,23 +87,28 @@ void Gerenciadores::Gerenciador_Eventos::isKeyLoose(const sf::Keyboard::Key tecl
     } 
     
 }
-
+*/
 void Gerenciadores::Gerenciador_Eventos::executar()
 {
     sf::Event evento;
     while (pGG->getWindow()->pollEvent(evento)) {
         if (evento.type == sf::Event::KeyPressed) {
-            isKeyPressed(evento.key.code, pj1->getFirst());
-            isKeyPressed(evento.key.code, pj2->getFirst());
+            listaObservador->isKeyPressed(evento.key.code, pj1->getFirst());
+            listaObservador->isKeyPressed(evento.key.code, pj2->getFirst());
         }
         else if (evento.type == sf::Event::KeyReleased) {
-            isKeyLoose(evento.key.code, pj1->getFirst());
-            isKeyLoose(evento.key.code, pj2->getFirst());
+            listaObservador->isKeyLoose(evento.key.code, pj1->getFirst());
+            listaObservador->isKeyLoose(evento.key.code, pj2->getFirst());
         }
         else if (evento.type == sf::Event::Closed) {
             pGG->closeWindow();
         }
-    }
+        else if (evento.type == sf::Event::MouseMoved) {
+            listaObservador->notifyMouseMovement(evento.mouseMove);
+        }
+        else if (evento.type == sf::Event::MouseButtonReleased) {
+            listaObservador->notifyMouseButtonRealeased(evento.mouseButton.button);
+        }
 }
 
 

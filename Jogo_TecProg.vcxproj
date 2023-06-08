@@ -170,10 +170,13 @@
     <ClCompile Include="Jogo_TecProg.cpp" />
     <ClCompile Include="Layer.cpp" />
     <ClCompile Include="ListaEntidades.cpp" />
+    <ClCompile Include="ListaObserver.cpp" />
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="MenuPause.cpp" />
     <ClCompile Include="Observer.cpp" />
+    <ClCompile Include="ObserverFase.cpp" />
+    <ClCompile Include="ObserverPlayer.cpp" />
     <ClCompile Include="Personagem.cpp" />
     <ClCompile Include="Projeteis.cpp" />
     <ClCompile Include="Text.cpp" />
@@ -206,10 +209,13 @@
     <ClInclude Include="Layer.h" />
     <ClInclude Include="Lista.h" />
     <ClInclude Include="ListaEntidades.h" />
+    <ClInclude Include="ListaObserver.h" />
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="MenuPause.h" />
     <ClInclude Include="Observer.h" />
+    <ClInclude Include="ObserverFase.h" />
+    <ClInclude Include="ObserverPlayer.h" />
     <ClInclude Include="Personagem.h" />
     <ClInclude Include="Projeteis.h" />
     <ClInclude Include="resource.h" />
