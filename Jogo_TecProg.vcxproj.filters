@@ -90,8 +90,8 @@
     <ClCompile Include="Entidade.cpp">
       <Filter>Arquivos de Origem\Entidade</Filter>
     </ClCompile>
-    <ClCompile Include="Obstaculo.cpp">
-      <Filter>Arquivos de Origem\Entidade</Filter>
+    <ClCompile Include="Gerenciador_Colisao.cpp">
+      <Filter>Arquivos de Origem\Gerenciadores</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -137,8 +137,8 @@
     <ClInclude Include="Lista.h">
       <Filter>Arquivos de Cabeçalho\Listas</Filter>
     </ClInclude>
-    <ClInclude Include="Obstaculo.h">
-      <Filter>Arquivos de Cabeçalho\Entidade</Filter>
+    <ClInclude Include="Gerenciador_Colisao.h">
+      <Filter>Arquivos de Cabeçalho\Gerenciadores</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,7 @@
 #pragma once
 #include "Personagem.h"
 #include "Jogador.h"
+#include "Gerenciador_Colisao.h"
 // usado p/ gerar números aleatórios
 #include <time.h>
 
@@ -15,14 +16,17 @@
 #define RAIO_PERSEGUIR_Y 200.0f
 
 namespace Gerenciadores { class Gerenciador_Evento; }
+namespace Gerenciadores { class Gerenciador_Colisao; }
 
 namespace Entidades {
     namespace Personagens {
         class Inimigo :
             public Entidades::Personagens::Personagem
+            //public Gerenciadores::Gerenciador_Colisao
         {
         private:
             Entidades::Personagens::Jogador* jogador;
+            //Gerenciadores::Gerenciador_Colisao;
             sf::Clock Relogio;
             short RamdomMoviment;
             float dtAux;

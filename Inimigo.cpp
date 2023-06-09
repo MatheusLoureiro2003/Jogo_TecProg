@@ -1,5 +1,6 @@
 #include "Inimigo.h"
 #include "Gerenciador_Eventos.h"
+#include "Gerenciador_Colisao.h"
 
 
 
@@ -10,7 +11,7 @@ void Entidades::Personagens::Inimigo::Inicializa()
 }
 
 void Entidades::Personagens::Inimigo::MoveInimigo()
-{
+{      
     sf::Vector2f posJogador = jogador->getBody().getPosition();
     sf::Vector2f posInimigo = body.getPosition();
     if (fabs(posJogador.x - posInimigo.x) <= RAIO_PERSEGUIR_X && fabs(posJogador.y - posInimigo.y) <= RAIO_PERSEGUIR_Y) {
@@ -19,6 +20,12 @@ void Entidades::Personagens::Inimigo::MoveInimigo()
         }
         else {
             Walk(true);
+            //chamar aqui a função bool colidir
+            //
+            /*if (Gerenciadores::Gerenciador_Colisao::colidir(posJogador, posInimigo, tam) == 1)
+            {
+                Stop();
+            }else Walk(true);*/
         }
     }
     else {

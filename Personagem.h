@@ -1,5 +1,6 @@
 #pragma once
 #include "Entidade.h"
+//#include "Gerenciador_Colisao.h"
 namespace Entidades {
 	namespace Personagens {
 		class Personagem :

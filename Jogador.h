@@ -6,6 +6,7 @@
 
 #define VELOCIDADE_JOGADOR 200.0f
 namespace Gerenciadores { class Gerenciador_Evento; }
+namespace Gerenciadores { class Gerenciador_Colisao; }
 
 namespace Entidades {
     namespace Personagens {

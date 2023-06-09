@@ -1,6 +1,7 @@
 #include "Jogador.h"
 #include <cmath>
 #include "Gerenciador_Eventos.h"
+#include "Gerenciador_Colisao.h"
 
 Entidades::Personagens::Jogador::Jogador(const sf::Vector2f pos) :
     Entidades::Personagens::Personagem(VELOCIDADE_JOGADOR, pos, sf::Vector2f(TAMANHO_JOGADOR_X, TAMANHO_JOGADOR_Y))
