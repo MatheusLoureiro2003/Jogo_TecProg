@@ -13,7 +13,7 @@ public:
     virtual void draw();
     void setRemove(const bool remover = true);
     const bool getRemove() const;
-    //virtual void mudarEstadoObservador() = 0;
+    virtual void changeObserverState() = 0;
 };
 
 

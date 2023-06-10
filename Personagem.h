@@ -1,5 +1,7 @@
 #pragma once
 #include "Entidade.h"
+#define GRAVIDADE 1.0f
+
 namespace Entidades {
 	namespace Personagens {
 		class Personagem :
@@ -9,9 +11,9 @@ namespace Entidades {
 			sf::Vector2f lastSpeed;
 			bool canWalk;
 			bool toLeft;
+			bool attack;
+			const float maxSpeed;
 			sf::Vector2f Speed;
-			//bool canWalk;
-			//bool toLeft;
 			sf::Clock relogio;
 			float dt;
 		public:
@@ -19,6 +21,7 @@ namespace Entidades {
 			virtual ~Personagem();
 			void Walk(const bool toLeft);
 			void Stop();
+			void Attack(const bool attack);
 			void updatePosition();
 			virtual void atualizar() = 0;
 			//virtual int getVidas() const = 0;

@@ -196,6 +196,12 @@
       <Filter>Arquivos de Origem\Fase</Filter>
     </ClCompile>
     <ClCompile Include="ObserverPlayer.cpp">
+      <Filter>Arquivos de Origem\Observadores</Filter>
+    </ClCompile>
+    <ClCompile Include="ObserverMainMenu.cpp">
+      <Filter>Arquivos de Origem\Observadores</Filter>
+    </ClCompile>
+    <ClCompile Include="ObserverMenuPause.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
@@ -312,6 +318,12 @@
       <Filter>Arquivos de Cabeçalho\Contrutores</Filter>
     </ClInclude>
     <ClInclude Include="ObserverPlayer.h">
+      <Filter>Arquivos de Cabeçalho\Observadores</Filter>
+    </ClInclude>
+    <ClInclude Include="ObserverMainMenu.h">
+      <Filter>Arquivos de Cabeçalho\Observadores</Filter>
+    </ClInclude>
+    <ClInclude Include="ObserverMenuPause.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>

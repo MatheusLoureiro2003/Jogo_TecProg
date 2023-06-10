@@ -20,7 +20,7 @@ class EstadoMenuPause :
     public:
         EstadoMenuPause();
         ~EstadoMenuPause();
-        //void mudarEstadoObservador();
+        void changeObserverState();
         void executar();
 };
 

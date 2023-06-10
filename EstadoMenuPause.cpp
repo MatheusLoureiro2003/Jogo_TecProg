@@ -20,6 +20,11 @@ EstadoMenuPause::~EstadoMenuPause()
 {
 }
 
+void EstadoMenuPause::changeObserverState()
+{
+    menuPause.changeObserverState();
+}
+
 void EstadoMenuPause::executar()
 {
     menuPause.executar();

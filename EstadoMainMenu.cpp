@@ -9,6 +9,11 @@ EstadoMainMenu::~EstadoMainMenu()
 {
 }
 
+void EstadoMainMenu::changeObserverState()
+{
+	mainMenu.changeObserverState();
+}
+
 void EstadoMainMenu::executar()
 {
 	mainMenu.executar();

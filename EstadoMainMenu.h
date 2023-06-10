@@ -10,7 +10,7 @@ private:
 public:
     EstadoMainMenu();
     ~EstadoMainMenu();
-    //void mudarEstadoObservador();
+    void changeObserverState();
     void executar();
 };
 

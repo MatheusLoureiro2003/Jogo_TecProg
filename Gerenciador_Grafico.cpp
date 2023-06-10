@@ -94,6 +94,12 @@ void Gerenciadores::Gerenciador_Grafico::resetWindow()
 	window->setView(camera);
 }
 
+void Gerenciadores::Gerenciador_Grafico::updateCamera(const sf::Vector2f pos)
+{
+	camera.setCenter(pos);
+	window->setView(camera);
+}
+
 
 
 

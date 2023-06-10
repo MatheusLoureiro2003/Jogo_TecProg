@@ -109,6 +109,7 @@ void Gerenciadores::Gerenciador_Eventos::executar()
         else if (evento.type == sf::Event::MouseButtonReleased) {
             listaObservador->notifyMouseButtonRealeased(evento.mouseButton.button);
         }
+    }
 }
 
 

@@ -12,7 +12,7 @@ namespace Observadores {
     public:
         ObserverPlayer(Entidades::Personagens::Jogador* pJogador);
         ~ObserverPlayer();
-        void IsKeyPressed(const sf::Keyboard::Key tecla, bool first);
-        void IsKeyLoosed(const sf::Keyboard::Key tecla, bool first);
+        void isKeyPressed(const sf::Keyboard::Key tecla, bool first);
+        void isKeyLoose(const sf::Keyboard::Key tecla, bool first);
     };
 }

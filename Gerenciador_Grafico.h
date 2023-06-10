@@ -42,6 +42,8 @@ namespace Gerenciadores {
 		sf::Font loadFont(const char* path);
 
 		void resetWindow();
+
+		void updateCamera(const sf::Vector2f pos);
 	};
 }
 

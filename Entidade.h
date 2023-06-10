@@ -14,10 +14,12 @@ namespace Entidades {
 		int y;
 	public:
 		Entidade(const sf::Vector2f pos, const sf::Vector2f tam, const IDs ID);
-		~Entidade();
+		virtual~Entidade();
+		void setPos(sf::Vector2f pos);
+		sf::Vector2f getPos();
+		const sf::Vector2f getTam();
 		virtual void atualizar() = 0;
 		const sf::RectangleShape getBody();
-		//virtual void executar() = 0;
 		void draw() { pGG->draw(body); }
 	};
 }

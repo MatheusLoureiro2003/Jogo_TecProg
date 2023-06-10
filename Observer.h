@@ -6,11 +6,12 @@ namespace Gerenciadores {
     class Gerenciador_Estado;
 }
 namespace Observadores {
+
     class Observer
     {
     protected:
-        static Gerenciadores::Gerenciador_Eventos* pEve;
-        static Gerenciadores::Gerenciador_Estados* pGE;
+        static Gerenciadores::Gerenciador_Evento* pEve;
+        static Gerenciadores::Gerenciador_Estado* pGE;
     private:
         bool activate;
     public:

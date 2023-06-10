@@ -1,8 +1,7 @@
 #pragma once
 #include "Estado.h"
 #include "Gerenciador_Grafico.h"
-//#include "Construtor_Estado.h"
-#include "Fase.h"
+#include "Cyberpunk.h"
 
 class EstadoPlay :
     public Estado
@@ -14,6 +13,6 @@ public:
     ~EstadoPlay();
     Fases::Fase* getFase();
     void executar();
-   // void mudarEstadoObservador();
+   void changeObserverState();
 };
 

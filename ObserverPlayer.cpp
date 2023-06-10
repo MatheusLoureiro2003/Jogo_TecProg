@@ -9,7 +9,7 @@ Observadores::ObserverPlayer::~ObserverPlayer()
 {
 }
 
-void Observadores::ObserverPlayer::IsKeyPressed(const sf::Keyboard::Key tecla, bool first)
+void Observadores::ObserverPlayer::isKeyPressed(const sf::Keyboard::Key tecla, bool first)
 {
 	if (first) {
         switch (tecla)
@@ -26,12 +26,12 @@ void Observadores::ObserverPlayer::IsKeyPressed(const sf::Keyboard::Key tecla, b
         break;
         case(sf::Keyboard::W):
         {
-            pJogador->pular();
+            pJogador->jump();
         }
         break;
         case(sf::Keyboard::S):
         {
-            pJogador->atacar(true);
+            pJogador->Attack(true);
         }
         break;;
         }
@@ -56,14 +56,14 @@ void Observadores::ObserverPlayer::IsKeyPressed(const sf::Keyboard::Key tecla, b
         break;
         case(sf::Keyboard::Down):
         {
-            pJogador->attack(true);
+            pJogador->Attack(true);
         }
         break;;
         }
     }
 }
 
-void Observadores::ObserverPlayer::IsKeyLoosed(const sf::Keyboard::Key tecla, bool first)
+void Observadores::ObserverPlayer::isKeyLoose(const sf::Keyboard::Key tecla, bool first)
 {
     if (first) {
         switch (tecla)
