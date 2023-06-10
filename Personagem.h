@@ -16,7 +16,7 @@ namespace Entidades {
 			sf::Clock relogio;
 			float dt;
 		public:
-			Personagem(const float speed, const sf::Vector2f pos, const sf::Vector2f tam);
+			Personagem(const float speed, const sf::Vector2f pos, const sf::Vector2f tam, const IDs ID);
 			virtual ~Personagem();
 			void Walk(const bool toLeft);
 			void Stop();

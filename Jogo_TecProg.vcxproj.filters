@@ -52,6 +52,45 @@
     <Filter Include="Arquivos de Cabeçalho\Entidade\Personagem">
       <UniqueIdentifier>{7e57ae22-ba55-4fcd-a2f9-3387d5f68653}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Menus">
+      <UniqueIdentifier>{f94f0be8-659a-4b8a-9bd7-a16f1e0be25a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Menus\Botao">
+      <UniqueIdentifier>{7f0d0181-3edd-4b80-b477-eeed3415e90e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Menu">
+      <UniqueIdentifier>{ccd0a33f-1b5d-4860-ba2e-bb9da9ca1658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Menu\Botao">
+      <UniqueIdentifier>{5dee9c12-1f2f-4f1e-80fb-3d0a7df29b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Mundo">
+      <UniqueIdentifier>{5a9db27e-ed97-44e3-9371-a0ee893d73df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Projeteis">
+      <UniqueIdentifier>{13d64755-567d-42cf-ab7d-2bde5bef294c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Estados">
+      <UniqueIdentifier>{9b9e83f2-c631-4dfb-bc5d-99e8cb3468b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Estados">
+      <UniqueIdentifier>{12d4546c-3e10-445c-a704-98ca03da318d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Projeteis">
+      <UniqueIdentifier>{588a20d7-4b90-4259-867c-59f34e0871ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Contrutores">
+      <UniqueIdentifier>{063068d0-8135-4a37-85fa-eaa1ae95bb39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Contrutores">
+      <UniqueIdentifier>{085d8f93-eba4-446d-b215-201949f5b08f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Observadores">
+      <UniqueIdentifier>{d87a9fcf-c455-4d50-a03b-d95b420c4d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Observadores">
+      <UniqueIdentifier>{6d08fd91-8f61-47be-b232-68178bd40370}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jogo_TecProg.cpp">
@@ -68,9 +107,6 @@
     </ClCompile>
     <ClCompile Include="Personagem.cpp">
       <Filter>Arquivos de Origem\Entidade\Personagens</Filter>
-    </ClCompile>
-    <ClCompile Include="Ente.cpp">
-      <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="Gerenciador_Grafico.cpp">
       <Filter>Arquivos de Origem\Gerenciadores</Filter>
@@ -90,8 +126,77 @@
     <ClCompile Include="Entidade.cpp">
       <Filter>Arquivos de Origem\Entidade</Filter>
     </ClCompile>
-    <ClCompile Include="Gerenciador_Colisao.cpp">
+    <ClCompile Include="Menu.cpp">
+      <Filter>Arquivos de Origem\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Botao.cpp">
+      <Filter>Arquivos de Origem\Menu\Botao</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatedText.cpp">
+      <Filter>Arquivos de Origem\Menu\Botao</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>Arquivos de Origem\Menu\Botao</Filter>
+    </ClCompile>
+    <ClCompile Include="Ente.cpp">
+      <Filter>Arquivos de Origem\Mundo</Filter>
+    </ClCompile>
+    <ClCompile Include="Estado.cpp">
+      <Filter>Arquivos de Origem\Estados</Filter>
+    </ClCompile>
+    <ClCompile Include="Background.cpp">
+      <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
+    </ClCompile>
+    <ClCompile Include="Layer.cpp">
+      <Filter>Arquivos de Origem\Elementos_Graficos</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>Arquivos de Origem\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Gerenciador_Estados.cpp">
       <Filter>Arquivos de Origem\Gerenciadores</Filter>
+    </ClCompile>
+    <ClCompile Include="Projeteis.cpp">
+      <Filter>Arquivos de Origem\Projeteis</Filter>
+    </ClCompile>
+    <ClCompile Include="EstadoMainMenu.cpp">
+      <Filter>Arquivos de Origem\Estados</Filter>
+    </ClCompile>
+    <ClCompile Include="EstadoPlay.cpp">
+      <Filter>Arquivos de Origem\Estados</Filter>
+    </ClCompile>
+    <ClCompile Include="EstadoMenuPause.cpp">
+      <Filter>Arquivos de Origem\Estados</Filter>
+    </ClCompile>
+    <ClCompile Include="EstadoMenuMainOption.cpp">
+      <Filter>Arquivos de Origem\Estados</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuPause.cpp">
+      <Filter>Arquivos de Origem\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Construtor_Estado.cpp">
+      <Filter>Arquivos de Origem\Contrutores</Filter>
+    </ClCompile>
+    <ClCompile Include="Construtor_Fase.cpp">
+      <Filter>Arquivos de Origem\Contrutores</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer.cpp">
+      <Filter>Arquivos de Origem\Observadores</Filter>
+    </ClCompile>
+    <ClCompile Include="ObserverFase.cpp">
+      <Filter>Arquivos de Origem\Observadores</Filter>
+    </ClCompile>
+    <ClCompile Include="ListaObserver.cpp">
+      <Filter>Arquivos de Origem\Lista</Filter>
+    </ClCompile>
+    <ClCompile Include="Construtor_Entidades.cpp">
+      <Filter>Arquivos de Origem\Contrutores</Filter>
+    </ClCompile>
+    <ClCompile Include="Cyberpunk.cpp">
+      <Filter>Arquivos de Origem\Fase</Filter>
+    </ClCompile>
+    <ClCompile Include="ObserverPlayer.cpp">
+      <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -137,8 +242,77 @@
     <ClInclude Include="Lista.h">
       <Filter>Arquivos de Cabeçalho\Listas</Filter>
     </ClInclude>
-    <ClInclude Include="Gerenciador_Colisao.h">
+    <ClInclude Include="IDs.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Arquivos de Cabeçalho\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Botao.h">
+      <Filter>Arquivos de Cabeçalho\Menus\Botao</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>Arquivos de Cabeçalho\Menus\Botao</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatedText.h">
+      <Filter>Arquivos de Cabeçalho\Menus\Botao</Filter>
+    </ClInclude>
+    <ClInclude Include="Estado.h">
+      <Filter>Arquivos de Cabeçalho\Estados</Filter>
+    </ClInclude>
+    <ClInclude Include="Background.h">
+      <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
+    </ClInclude>
+    <ClInclude Include="Layer.h">
+      <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
+    </ClInclude>
+    <ClInclude Include="Projeteis.h">
+      <Filter>Arquivos de Cabeçalho\Projeteis</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>Arquivos de Cabeçalho\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="EstadoPlay.h">
+      <Filter>Arquivos de Cabeçalho\Estados</Filter>
+    </ClInclude>
+    <ClInclude Include="EstadoMainMenu.h">
+      <Filter>Arquivos de Cabeçalho\Estados</Filter>
+    </ClInclude>
+    <ClInclude Include="Gerenciador_Estados.h">
       <Filter>Arquivos de Cabeçalho\Gerenciadores</Filter>
+    </ClInclude>
+    <ClInclude Include="EstadoMenuPause.h">
+      <Filter>Arquivos de Cabeçalho\Estados</Filter>
+    </ClInclude>
+    <ClInclude Include="EstadoMenuMainOption.h">
+      <Filter>Arquivos de Cabeçalho\Estados</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuPause.h">
+      <Filter>Arquivos de Cabeçalho\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="Construtor_Estado.h">
+      <Filter>Arquivos de Cabeçalho\Contrutores</Filter>
+    </ClInclude>
+    <ClInclude Include="Construtor_Fase.h">
+      <Filter>Arquivos de Cabeçalho\Contrutores</Filter>
+    </ClInclude>
+    <ClInclude Include="ListaObserver.h">
+      <Filter>Arquivos de Cabeçalho\Listas</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>Arquivos de Cabeçalho\Observadores</Filter>
+    </ClInclude>
+    <ClInclude Include="ObserverFase.h">
+      <Filter>Arquivos de Cabeçalho\Observadores</Filter>
+    </ClInclude>
+    <ClInclude Include="Cyberpunk.h">
+      <Filter>Arquivos de Cabeçalho\Fases</Filter>
+    </ClInclude>
+    <ClInclude Include="Construtor_Entidades.h">
+      <Filter>Arquivos de Cabeçalho\Contrutores</Filter>
+    </ClInclude>
+    <ClInclude Include="ObserverPlayer.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

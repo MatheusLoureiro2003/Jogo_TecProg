@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 
 namespace Listas {
 	template <class TE>class Elemento

@@ -15,13 +15,15 @@ namespace Entidades {
         {
          private:
             void inicializa();
+            bool first;
 
         public:
-            Jogador(const sf::Vector2f pos);
+            Jogador(const sf::Vector2f pos, bool first);
             ~Jogador();
             //void move();
             void atualizar();
-           
+            void setFirst(const bool first);
+            bool getFirst();
 
             //int getVidas() { return num_Vidas; }
             //void executar();

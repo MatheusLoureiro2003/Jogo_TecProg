@@ -1,5 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#define TELA_X 800.0f
+#define TELA_Y 600.0f
 
 namespace Gerenciadores {
 	class Gerenciador_Grafico
@@ -8,9 +10,7 @@ namespace Gerenciadores {
 
 		static Gerenciador_Grafico* instance;
 		sf::RenderWindow* window;
-		std::map<const char*, sf::Texture*> texturesMap;
-		std::map<const char*, sf::Font*> fontsMap;
-		sf::View view;
+		sf::View camera;
 		Gerenciador_Grafico();
 
 	public:
@@ -29,15 +29,19 @@ namespace Gerenciadores {
 
 		void draw(sf::RectangleShape body) { window->draw(body); }
 
-		float updateDeltaTime();
+		void draw(sf::Text text) { window->draw(text); }
+
+		const sf::View getCamera();
 		
 		const sf::Vector2f getWindowSize() const;
 
 		void centerView(const sf::Vector2f pos);
 
-		sf::Texture* loadTexture(const char* path);
+		sf::Texture loadTexture(const char* path);
 
-		sf::Font* loadFont(const char* path);
+		sf::Font loadFont(const char* path);
+
+		void resetWindow();
 	};
 }
 

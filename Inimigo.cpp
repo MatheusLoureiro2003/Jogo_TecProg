@@ -34,7 +34,7 @@ void Entidades::Personagens::Inimigo::MoveInimigo()
 }
 
 Entidades::Personagens::Inimigo::Inimigo(const sf::Vector2f pos, const sf::Vector2f tam, Entidades::Personagens::Jogador* jogador) :
-	Personagem(VELOCIDADE_INIMIGO, pos, tam), dtAux(0.0f), jogador(jogador)
+	Personagem(VELOCIDADE_INIMIGO, pos, tam,IDs::inimigo), dtAux(0.0f), jogador(jogador)
 {
 
     //static Gerenciadores::Gerenciador_Eventos* pEve = Gerenciadores::Gerenciador_Eventos::getInstance();
