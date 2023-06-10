@@ -6,7 +6,7 @@ void Menu::UpdateBackPosition()
 
 Menu::Menu(const IDs ID, const sf::Vector2f tamBotao, const std::string nome, const unsigned int tamFonte):
 	Ente(ID), ButtonList(), it(), ButtonSize(tamBotao),WindowSize(pGG->getWindowSize()), BackPosition(sf::Vector2f(0.0f,0.0f)),
-	MenuName(pGG->loadFont("Jogo_TecProg/Assets/ThaleahFat.ttf"), nome, tamFonte)
+	MenuName(pGG->loadFont("C:/Users/Matha/source/repos/jogo/Jogo_TecProg/Assets/ThaleahFat.ttf"), nome, tamFonte)
 {
 }
 
