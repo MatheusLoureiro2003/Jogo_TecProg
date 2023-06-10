@@ -16,8 +16,8 @@ namespace Listas {
         void removeObserver(int pos);
         int getTam();
         Observadores::Observer* operator[](int pos);
-        void isKeyPressed(const sf::Keyboard::Key tecla, bool first);
-        void isKeyLoose(const sf::Keyboard::Key tecla, bool first);
+        void isKeyPressed(const sf::Keyboard::Key tecla);
+        void isKeyLoose(const sf::Keyboard::Key tecla);
         void notifyMouseMovement(const sf::Event::MouseMoveEvent mouse);
         void notifyMouseButtonRealeased(const sf::Mouse::Button botaoMouse);
     };

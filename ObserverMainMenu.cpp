@@ -2,7 +2,7 @@
 #include "MainMenu.h"
 #include "Gerenciador_Estados.h"
 
-Observadores::ObserverMainMenu::ObserverMainMenu(Menu::MainMenu* menuPrincipal): Observadores::Observer(),menuPrincipal(menuPrincipal)
+Observadores::ObserverMainMenu::ObserverMainMenu(Menus::MainMenu* menuPrincipal): Observadores::Observer(),menuPrincipal(menuPrincipal)
 {
 }
 
@@ -10,7 +10,7 @@ Observadores::ObserverMainMenu::~ObserverMainMenu()
 {
 }
 
-void Observadores::ObserverMainMenu::isKeyPressed(const sf::Keyboard::Key tecla)
+void Observadores::ObserverMainMenu::IsKeyPressed(const sf::Keyboard::Key tecla)
 {
     switch (tecla)
     {
@@ -20,7 +20,7 @@ void Observadores::ObserverMainMenu::isKeyPressed(const sf::Keyboard::Key tecla)
         {
         case (IDs::botao_novoJogo):
         {
-            pGE->addEstado(IDs::jogar_cyberpunk);
+            pGE->addState(IDs::jogar_cyberpunk);
         }
         break;
         case (IDs::botao_sair):
@@ -34,7 +34,7 @@ void Observadores::ObserverMainMenu::isKeyPressed(const sf::Keyboard::Key tecla)
     }
 }
 
-void Observadores::ObserverMainMenu::isKeyLoose(const sf::Keyboard::Key tecla)
+void Observadores::ObserverMainMenu::IsKeyLoose(const sf::Keyboard::Key tecla)
 {
     switch (tecla)
     {
@@ -67,7 +67,7 @@ void Observadores::ObserverMainMenu::buttonLooseMouse(const sf::Mouse::Button bo
             {
             case (IDs::botao_novoJogo):
             {
-                pGE->addEstado(IDs::jogar_cyberpunk);
+                pGE->addState(IDs::jogar_cyberpunk);
             }
             break;
             case (IDs::botao_sair):
@@ -79,4 +79,5 @@ void Observadores::ObserverMainMenu::buttonLooseMouse(const sf::Mouse::Button bo
             break;
         }
         }
+    }
 }

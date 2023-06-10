@@ -1,10 +1,11 @@
 #include "MenuPause.h"
+#include "ObserverMenuPause.h"
 
-namespace Menu {
+namespace Menus {
     MenuPause::MenuPause(Fases::Fase* fase) :
         Menu(IDs::menu_pausa, sf::Vector2f(TAMANHO_BOTAO_X, TAMANHO_BOTAO_Y), "PAUSA", 100), fase(fase),
         darkBackground(WindowSize),
-        painelBackground(sf::Vector2f(WindowSize.x / 2.0f, WindowSize.y))
+        painelBackground(sf::Vector2f(WindowSize.x / 2.0f, WindowSize.y)), observadorMenuPausa(new Observadores::ObserverMenuPause(this))
     {
         MenuName.setColorText(sf::Color{255, 0, 0});
         darkBackground.setFillColor(sf::Color{0, 0, 0, 180});
@@ -14,6 +15,10 @@ namespace Menu {
 
     MenuPause::~MenuPause()
     {
+        if (observadorMenuPausa) {
+            delete(observadorMenuPausa);
+            observadorMenuPausa = nullptr;
+        }
     }
 
     void MenuPause::createButtons()
@@ -63,7 +68,7 @@ namespace Menu {
 
     void MenuPause::changeObserveState()
     {
-        observadorMenuPausa->changeObserverState();
+        observadorMenuPausa->changeStateActivate();
     }
 
     void MenuPause::executar()

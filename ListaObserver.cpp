@@ -36,24 +36,24 @@ namespace Listas {
 		return objListaObservador.getItem(pos);
 	}
 
-	void ListaObserver::isKeyPressed(const sf::Keyboard::Key tecla, bool first)
+	void ListaObserver::isKeyPressed(const sf::Keyboard::Key tecla)
 	{
 		for (int i = 0; i < objListaObservador.getLen(); i++) {
 			Observadores::Observer* observador = objListaObservador.getItem(i);
 			if (observador->getActivate()) {
-				observador->isKeyPressed(tecla,first);
+				observador->IsKeyPressed(tecla);
 			}
 			observador = nullptr;
 		}
 		std::cout << objListaObservador.getLen() << std::endl;
 	}
 
-	void ListaObserver::isKeyLoose(const sf::Keyboard::Key tecla, bool first)
+	void ListaObserver::isKeyLoose(const sf::Keyboard::Key tecla)
 	{
 		for (int i = 0; i < objListaObservador.getLen(); i++) {
 			Observadores::Observer* observador = objListaObservador.getItem(i);
 			if (observador->getActivate()) {
-				observador->isKeyLoose(tecla,first);
+				observador->IsKeyLoose(tecla);
 			}
 			observador = nullptr;
 		}

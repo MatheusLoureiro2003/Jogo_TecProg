@@ -2,16 +2,16 @@
 #include "SFML\Graphics.hpp"
 
 namespace Gerenciadores {
-    class Gerenciador_Evento;
-    class Gerenciador_Estado;
+    class Gerenciador_Eventos;
+    class Gerenciador_Estados;
 }
 namespace Observadores {
 
     class Observer
     {
     protected:
-        static Gerenciadores::Gerenciador_Evento* pEve;
-        static Gerenciadores::Gerenciador_Estado* pGE;
+        static Gerenciadores::Gerenciador_Eventos* pEve;
+        static Gerenciadores::Gerenciador_Estados* pGE;
     private:
         bool activate;
     public:
@@ -20,8 +20,8 @@ namespace Observadores {
         void changeStateActivate();
         const bool getActivate() const;
         void removeObserver();
-        virtual void isKeyPressed(const sf::Keyboard::Key tecla, bool first) = 0;
-        virtual void isKeyLoose(const sf::Keyboard::Key tecla, bool first) = 0;
+        virtual void IsKeyPressed(const sf::Keyboard::Key tecla);
+        virtual void IsKeyLoose(const sf::Keyboard::Key tecla);
         virtual void moveMouse(const sf::Vector2f posMouse);
         virtual void buttonLooseMouse(const sf::Mouse::Button botaoMouse);
     };

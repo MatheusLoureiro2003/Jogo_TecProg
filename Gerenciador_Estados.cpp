@@ -3,7 +3,7 @@
 Gerenciadores::Gerenciador_Estados* Gerenciadores::Gerenciador_Estados::Instance = nullptr;
 
 Gerenciadores::Gerenciador_Estados::Gerenciador_Estados():
-	pilhaEstados()//, construtorEstado()
+	pilhaEstados(), construtorEstado()
 {
 }
 

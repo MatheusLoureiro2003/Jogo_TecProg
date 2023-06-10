@@ -2,6 +2,10 @@
 #include "ObserverFase.h"
 
 
+void Fases::Fase::updateEntities()
+{
+}
+
 Fases::Fase::Fase(const IDs ID_Fase, const IDs ID_Fundo):Ente(ID),
 background(ID_Fundo), listaPersonagens(),
 listaObstaculos(), construtorEntidade(), observadorFase(new Observadores::ObserverFase(this))
@@ -30,11 +34,6 @@ Entidades::Personagens::Jogador* Fases::Fase::getJogador()
 	return nullptr;
 }
 
-/*Listas::ListaEntidades* Fases::Fase::getListaEntidades()
-{
-	return listaEntidades; 
-}*/
-
 void Fases::Fase::Executar()
 {
 	background.executar();
@@ -45,6 +44,11 @@ void Fases::Fase::draw()
 {
 	listaPersonagens.desenharEntidades();
 
+}
+
+void Fases::Fase::changeObserverState()
+{
+	observadorFase->changeStateActivate();
 }
 
 

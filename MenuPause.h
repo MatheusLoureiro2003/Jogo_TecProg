@@ -2,16 +2,20 @@
 #include "Menu.h"
 #include "Fase.h"
 
+
 #define TAMANHO_BOTAO_X 350.0f
 #define TAMANHO_BOTAO_Y 50.0f
 
-namespace Menu {
+namespace Observadores {
+    class ObserverMenuPause;
+}
+namespace Menus {
     class MenuPause :
         public Menu
     {
     private:
         Fases::Fase* fase;
-        // Observador::ObservadorMenuPausa* observadorMenuPausa;
+        Observadores::ObserverMenuPause* observadorMenuPausa;
         sf::RectangleShape darkBackground;
         sf::RectangleShape painelBackground;
 

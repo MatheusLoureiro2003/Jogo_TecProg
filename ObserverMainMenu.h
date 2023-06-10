@@ -2,7 +2,7 @@
 #include "Observer.h"
 #include "Botao.h"
 
-namespace Menu {
+namespace Menus {
     class MainMenu;
 }
 
@@ -12,12 +12,12 @@ namespace Observadores {
         public Observer
     {
     private:
-        Menu::MainMenu* menuPrincipal;
+        Menus::MainMenu* menuPrincipal;
     public:
-        ObserverMainMenu(Menu::MainMenu* menuPrincipal);
+        ObserverMainMenu(Menus::MainMenu* menuPrincipal);
         ~ObserverMainMenu();
-        void isKeyPressed(const sf::Keyboard::Key tecla);
-        void isKeyLoose(const sf::Keyboard::Key tecla);
+        void IsKeyPressed(const sf::Keyboard::Key tecla);
+        void IsKeyLoose(const sf::Keyboard::Key tecla);
         void moveMouse(const sf::Vector2f posMouse);
         void buttonLooseMouse(const sf::Mouse::Button botaoMouse);
     };

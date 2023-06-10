@@ -6,7 +6,7 @@ class EstadoMainMenu :
     public Estado
 {
 private:
-    MainMenu mainMenu;
+    Menus::MainMenu mainMenu;
 public:
     EstadoMainMenu();
     ~EstadoMainMenu();

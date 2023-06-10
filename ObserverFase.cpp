@@ -10,11 +10,11 @@ Observadores::ObserverFase::~ObserverFase()
 {
 }
 
-void Observadores::ObserverFase::isKeyPressed(const sf::Keyboard::Key tecla)
+void Observadores::ObserverFase::IsKeyPressed(const sf::Keyboard::Key tecla)
 {
 }
 
-void Observadores::ObserverFase::isKeyLoose(const sf::Keyboard::Key tecla)
+void Observadores::ObserverFase::IsKeyLoose(const sf::Keyboard::Key tecla)
 {
     switch (tecla)
     {

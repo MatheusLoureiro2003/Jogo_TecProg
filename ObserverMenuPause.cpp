@@ -1,6 +1,7 @@
 #include "ObserverMenuPause.h"
+#include "Gerenciador_Estados.h"
 
-Observadores::ObserverMenuPause::ObserverMenuPause(Menu::MenuPause* menuPausa):
+Observadores::ObserverMenuPause::ObserverMenuPause(Menus::MenuPause* menuPausa):
 	menuPausa(menuPausa)
 {
 }
@@ -9,7 +10,7 @@ Observadores::ObserverMenuPause::~ObserverMenuPause()
 {
 }
 
-void Observadores::ObserverMenuPause::isKeyPressed(const sf::Keyboard::Key tecla)
+void Observadores::ObserverMenuPause::IsKeyPressed(const sf::Keyboard::Key tecla)
 {
     switch(tecla)
     {
@@ -19,7 +20,7 @@ void Observadores::ObserverMenuPause::isKeyPressed(const sf::Keyboard::Key tecla
                     {
                     case (IDs::botao_voltar):
                     {
-                        pGE->removerEstado();
+                        pGE->removeState();
                     }
                     break;
                     case (IDs::botao_sair):
@@ -34,7 +35,7 @@ void Observadores::ObserverMenuPause::isKeyPressed(const sf::Keyboard::Key tecla
     }
 }
 
-void Observadores::ObserverMenuPause::isKeyLoose(const sf::Keyboard::Key tecla)
+void Observadores::ObserverMenuPause::IsKeyLoose(const sf::Keyboard::Key tecla)
 {
     switch (tecla)
     {

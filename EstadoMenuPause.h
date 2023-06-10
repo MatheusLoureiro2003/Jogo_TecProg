@@ -13,7 +13,7 @@ class EstadoMenuPause :
     public Estado
 {
     private:
-        MenuPause menuPause;
+        Menus::MenuPause menuPause;
         EstadoPlay* estadoJogar;
         static Gerenciadores::Gerenciador_Estados* pGE;
 

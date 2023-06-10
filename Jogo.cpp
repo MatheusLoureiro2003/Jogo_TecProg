@@ -19,8 +19,7 @@ Jogo::Jogo()
         exit(1);
     }
     inicializa();
-    //pGG = Gerenciador_Grafico::getInstance();
-    //LEs = fase1->getListaEntidades();
+
     Executar();
 }
 

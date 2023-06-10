@@ -202,7 +202,7 @@
       <Filter>Arquivos de Origem\Observadores</Filter>
     </ClCompile>
     <ClCompile Include="ObserverMenuPause.cpp">
-      <Filter>Arquivos de Origem</Filter>
+      <Filter>Arquivos de Origem\Observadores</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -324,7 +324,7 @@
       <Filter>Arquivos de Cabeçalho\Observadores</Filter>
     </ClInclude>
     <ClInclude Include="ObserverMenuPause.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
+      <Filter>Arquivos de Cabeçalho\Observadores</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

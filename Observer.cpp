@@ -34,6 +34,14 @@ namespace Observadores {
 		pEve->removeObserver(this);
 	}
 
+	void Observer::IsKeyPressed(const sf::Keyboard::Key tecla)
+	{
+	}
+
+	void Observer::IsKeyLoose(const sf::Keyboard::Key tecla)
+	{
+	}
+
 	void Observer::moveMouse(const sf::Vector2f posMouse)
 	{
 	}

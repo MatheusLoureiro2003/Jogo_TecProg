@@ -12,7 +12,7 @@ namespace Observadores {
     public:
         ObserverFase(Fases::Fase* fase);
         ~ObserverFase();
-        void isKeyPressed(const sf::Keyboard::Key tecla);
-        void isKeyLoose(const sf::Keyboard::Key tecla);
+        void IsKeyPressed(const sf::Keyboard::Key tecla);
+        void IsKeyLoose(const sf::Keyboard::Key tecla);
     };
 }
