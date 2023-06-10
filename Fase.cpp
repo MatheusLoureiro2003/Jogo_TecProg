@@ -51,6 +51,23 @@ void Fases::Fase::changeObserverState()
 	observadorFase->changeStateActivate();
 }
 
+void Fases::Fase::createEntities(char letra, const sf::Vector2i pos)
+{
+	sf::Vector2f posAux = sf::Vector2f(pos.x * 50.0f, pos.y * 50.0f);
+	switch (letra)
+	{
+	case ('i'):
+	{
+		listaPersonagens.addEntidade(construtorEntidade.createPlayer(posAux));
+	}
+	break;
+	case('j'): {
+		listaPersonagens.addEntidade(construtorEntidade.createEnemy(posAux));
+	}
+	break;
+	}
+}
+
 
 
 //j1 = new Entidades::Personagens::Jogador(sf::Vector2f(100.f, 200.f),false);

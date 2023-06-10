@@ -20,8 +20,8 @@ namespace Observadores {
         void changeStateActivate();
         const bool getActivate() const;
         void removeObserver();
-        virtual void IsKeyPressed(const sf::Keyboard::Key tecla);
-        virtual void IsKeyLoose(const sf::Keyboard::Key tecla);
+        virtual void IsKeyPressed(const sf::Keyboard::Key tecla) = 0;
+        virtual void IsKeyLoose(const sf::Keyboard::Key tecla) = 0;
         virtual void moveMouse(const sf::Vector2f posMouse);
         virtual void buttonLooseMouse(const sf::Mouse::Button botaoMouse);
     };

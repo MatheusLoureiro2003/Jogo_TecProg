@@ -16,6 +16,9 @@ namespace Gerenciadores {
         //padrão de projeto singleton
         static Gerenciador_Estados* Instance;
         Gerenciador_Estados();
+
+        void desactivateObservers();
+        void activateObservers();
     public:
         ~Gerenciador_Estados();
         static Gerenciador_Estados* getInstance();

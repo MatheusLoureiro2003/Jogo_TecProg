@@ -17,16 +17,16 @@ namespace Entidades {
         {
          private:
             void inicializa();
-            bool first;
+            //bool first;
             bool onFloor;
             Observadores::ObserverPlayer* observerPlayer;
         public:
-            Jogador(const sf::Vector2f pos, bool first);
+            Jogador(const sf::Vector2f pos);
             ~Jogador();
             //void move();
             void atualizar();
-            void setFirst(const bool first);
-            bool getFirst();
+            //void setFirst(const bool first);
+            //bool getFirst();
             void jump();
             void canJump();
             void changeObserverState();

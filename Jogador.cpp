@@ -2,9 +2,9 @@
 #include <cmath>
 #include "ObserverPlayer.h"
 
-Entidades::Personagens::Jogador::Jogador(const sf::Vector2f pos,bool first) :
+Entidades::Personagens::Jogador::Jogador(const sf::Vector2f pos) :
     Entidades::Personagens::Personagem(VELOCIDADE_JOGADOR, pos, sf::Vector2f(TAMANHO_JOGADOR_X, TAMANHO_JOGADOR_Y), IDs::jogador), 
-    first(first), observerPlayer(new Observadores::ObserverPlayer(this)),onFloor(false)
+    observerPlayer(new Observadores::ObserverPlayer(this)),onFloor(false)
 {
     if (observerPlayer == nullptr) {
         std::cout << "ERROR::Entidade::Personagem::Jogador::Jogador::nao foi possivel criar um observador para o jogador" << std::endl;
@@ -28,7 +28,7 @@ void Entidades::Personagens::Jogador::atualizar()
     pGG->updateCamera(sf::Vector2f(pos.x, 300.0f));
 }
 
-void Entidades::Personagens::Jogador::setFirst(const bool first)
+/*void Entidades::Personagens::Jogador::setFirst(const bool first)
 {
     this->first = first;
 }
@@ -36,7 +36,7 @@ void Entidades::Personagens::Jogador::setFirst(const bool first)
 bool Entidades::Personagens::Jogador::getFirst()
 {
     return first;
-}
+}*/
 
 void Entidades::Personagens::Jogador::jump()
 {

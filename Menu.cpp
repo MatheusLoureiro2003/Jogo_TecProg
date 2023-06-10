@@ -25,7 +25,7 @@ void Menu::addButton(const std::string info, const sf::Vector2f pos, const IDs I
 {
 	Botao* button = new Botao(info, ButtonSize, pos, ID, corSelecionado);
 	if (button == nullptr) {
-		throw("ERROR::Jungle::Menu::nao foi possivel criar um botao");
+		throw("ERROR::Menu::nao foi possivel criar um botao");
 	}
 	ButtonList.push_back(button);
 }

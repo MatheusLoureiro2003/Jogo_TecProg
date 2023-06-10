@@ -1,5 +1,5 @@
 #include "Gerenciador_Grafico.h"
-
+#include <stdexcept>
 #include <cstring>
 #include <iostream>
 
@@ -72,7 +72,7 @@ sf::Texture Gerenciadores::Gerenciador_Grafico::loadTexture(const char* path)
 {
 	sf::Texture textura;
 	if (!textura.loadFromFile(path)) {
-		std::cout << "ERRO::Gerenciador::Gerenciador_Grafico::nao foi possivel encontrar o caminho da textura - " << path << std::endl;
+		std::cout << "ERRO::Gerenciadores::Gerenciador_Grafico::nao foi possivel encontrar o caminho da textura - " << path << std::endl;
 		exit(1);
 	}
 	return textura;
@@ -83,7 +83,8 @@ sf::Font Gerenciadores::Gerenciador_Grafico::loadFont(const char* path)
 {
 	sf::Font fonte;
 	if (!fonte.loadFromFile(path)) {
-		throw("ERROR::Gerenciador::Gerenciador_Grafico::nao foi possivel encontrar o caminho da fonte");
+		std::cout << "ERRO::Gerenciadores::Gerenciador_Grafico::nao foi possivel encontrar o caminho da fonte - " << path << std::endl;
+		exit(1);
 	}
 	return fonte;
 }

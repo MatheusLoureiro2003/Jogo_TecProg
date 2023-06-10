@@ -7,6 +7,20 @@ Gerenciadores::Gerenciador_Estados::Gerenciador_Estados():
 {
 }
 
+void Gerenciadores::Gerenciador_Estados::desactivateObservers()
+{
+    Estado* estadoAtual = getCurrentState();
+
+    estadoAtual->changeObserverState();
+}
+
+void Gerenciadores::Gerenciador_Estados::activateObservers()
+{
+    Estado* estadoAtual = getCurrentState();
+
+    estadoAtual->changeObserverState();
+}
+
 Gerenciadores::Gerenciador_Estados::~Gerenciador_Estados()
 {
     //delete stack states
@@ -39,12 +53,12 @@ void Gerenciadores::Gerenciador_Estados::executar()
 
 void Gerenciadores::Gerenciador_Estados::addState(const IDs ID)
 {
-    Estado* estado = nullptr;// construtorEstado.createState(ID);
+    Estado* estado = construtorEstado.createState(ID);
     if (estado == nullptr) {
         std::cout << "ERROR::Gerenciador::Gerenciador_Estado::estado é nullptr" << std::endl;
         exit(1);
     }
-    //if (!pilhaEstados.empty()) {desativarObservadores();}
+    if (!pilhaEstados.empty()) { desactivateObservers();}
     //arrumar...
     pilhaEstados.push(estado);
 }
