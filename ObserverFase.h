@@ -13,6 +13,6 @@ namespace Observadores {
         ObserverFase(Fases::Fase* fase);
         ~ObserverFase();
         void IsKeyPressed(const sf::Keyboard::Key tecla);
-        void IsKeyLoosed(const sf::Keyboard::Key tecla);
+        void IsKeyLoose(const sf::Keyboard::Key tecla);
     };
 }

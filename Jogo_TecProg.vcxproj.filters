@@ -182,6 +182,8 @@
     </ClCompile>
     <ClCompile Include="Observer.cpp">
       <Filter>Arquivos de Origem\Observadores</Filter>
+    <ClCompile Include="Gerenciador_Colisao.cpp">
+      <Filter>Arquivos de Origem\Gerenciadores</Filter>
     </ClCompile>
     <ClCompile Include="ObserverFase.cpp">
       <Filter>Arquivos de Origem\Observadores</Filter>
@@ -313,6 +315,8 @@
     </ClInclude>
     <ClInclude Include="ObserverPlayer.h">
       <Filter>Arquivos de Cabeçalho</Filter>
+    <ClInclude Include="Gerenciador_Colisao.h">
+      <Filter>Arquivos de Cabeçalho\Gerenciadores</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

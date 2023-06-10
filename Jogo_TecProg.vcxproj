@@ -176,6 +176,8 @@
     <ClCompile Include="MenuPause.cpp" />
     <ClCompile Include="Observer.cpp" />
     <ClCompile Include="ObserverFase.cpp" />
+    <ClCompile Include="ObserverMainMenu.cpp" />
+    <ClCompile Include="ObserverMenuPause.cpp" />
     <ClCompile Include="ObserverPlayer.cpp" />
     <ClCompile Include="Personagem.cpp" />
     <ClCompile Include="Projeteis.cpp" />
@@ -215,6 +217,8 @@
     <ClInclude Include="MenuPause.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="ObserverFase.h" />
+    <ClInclude Include="ObserverMainMenu.h" />
+    <ClInclude Include="ObserverMenuPause.h" />
     <ClInclude Include="ObserverPlayer.h" />
     <ClInclude Include="Personagem.h" />
     <ClInclude Include="Projeteis.h" />

@@ -19,8 +19,7 @@ Jogo::Jogo()
         exit(1);
     }
     inicializa();
-    //pGG = Gerenciador_Grafico::getInstance();
-    //LEs = fase1->getListaEntidades();
+
     Executar();
 }
 
@@ -35,8 +34,7 @@ void Jogo::Executar()
         pEve->executar();
         pGG->clearWindow();
         pGE->executar();
-        LEs->executar();
-        fase1->draw();
+  
         pGG->displayWindow();
     }
 

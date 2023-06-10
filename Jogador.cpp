@@ -1,45 +1,36 @@
 #include "Jogador.h"
 #include <cmath>
+#include "ObserverPlayer.h"
 #include "Gerenciador_Eventos.h"
 #include "Gerenciador_Colisao.h"
 
-Entidades::Personagens::Jogador::Jogador(const sf::Vector2f pos,bool first) :
+Entidades::Personagens::Jogador::Jogador(const sf::Vector2f pos) :
     Entidades::Personagens::Personagem(VELOCIDADE_JOGADOR, pos, sf::Vector2f(TAMANHO_JOGADOR_X, TAMANHO_JOGADOR_Y), IDs::jogador), 
-    first(first)
+    observerPlayer(new Observadores::ObserverPlayer(this)),onFloor(false)
 {
-    //body.setPosition(pos);//(sf::Vector2f(100.f, 200.f));
+    if (observerPlayer == nullptr) {
+        std::cout << "ERROR::Entidade::Personagem::Jogador::Jogador::nao foi possivel criar um observador para o jogador" << std::endl;
+        exit(1);
+    }
+    inicializa();
 }
 
 Entidades::Personagens::Jogador::~Jogador()
 {
+    if (observerPlayer) {
+        delete(observerPlayer);
+        observerPlayer = nullptr;
+    }
 }
-
-/*void Entidades::Personagens::Jogador::move()
-{
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-        body.move(sf::Vector2f(0.1f, 0.f));
-    }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-        body.move(sf::Vector2f(-0.1f, 0.f));
-    }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-        body.move(sf::Vector2f(0.0f, -0.1f));
-    }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-        body.move(sf::Vector2f(0.0f, 0.1f));
-    }
-}*/
 
 void Entidades::Personagens::Jogador::atualizar()
 {
    
     updatePosition();
-    
-    relogio.restart();
-   
+    pGG->updateCamera(sf::Vector2f(pos.x, 300.0f));
 }
 
-void Entidades::Personagens::Jogador::setFirst(const bool first)
+/*void Entidades::Personagens::Jogador::setFirst(const bool first)
 {
     this->first = first;
 }
@@ -47,6 +38,24 @@ void Entidades::Personagens::Jogador::setFirst(const bool first)
 bool Entidades::Personagens::Jogador::getFirst()
 {
     return first;
+}*/
+
+void Entidades::Personagens::Jogador::jump()
+{
+    if (onFloor) {
+        lastSpeed.y = -sqrt(2.0f * GRAVIDADE * TAMANHO_PULO);
+        onFloor = false;
+    }
+}
+
+void Entidades::Personagens::Jogador::canJump()
+{
+    onFloor = true;
+}
+
+void Entidades::Personagens::Jogador::changeObserverState()
+{
+    observerPlayer->changeStateActivate();
 }
 
 void Entidades::Personagens::Jogador::inicializa()

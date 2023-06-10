@@ -13,14 +13,14 @@ class EstadoMenuPause :
     public Estado
 {
     private:
-        MenuPause menuPause;
+        Menus::MenuPause menuPause;
         EstadoPlay* estadoJogar;
         static Gerenciadores::Gerenciador_Estados* pGE;
 
     public:
         EstadoMenuPause();
         ~EstadoMenuPause();
-        //void mudarEstadoObservador();
+        void changeObserverState();
         void executar();
 };
 

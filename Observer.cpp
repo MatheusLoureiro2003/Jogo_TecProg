@@ -2,9 +2,11 @@
 #include "Gerenciador_Eventos.h"
 #include "Gerenciador_Estados.h"
 
+Gerenciadores::Gerenciador_Eventos* Observadores::Observer::pEve = Gerenciadores::Gerenciador_Eventos::getInstance();
+Gerenciadores::Gerenciador_Estados* Observadores::Observer::pGE = Gerenciadores::Gerenciador_Estados::getInstance();
+
 namespace Observadores {
-	Gerenciadores::Gerenciador_Eventos* Observer::pEve = Gerenciadores::Gerenciador_Eventos::getInstance();
-	Gerenciadores::Gerenciador_Estados* Observer::pGE = Gerenciadores::Gerenciador_Estados::getInstance();
+
 
 	Observer::Observer() :
 		activate(true)
@@ -30,6 +32,14 @@ namespace Observadores {
 	void Observer::removeObserver()
 	{
 		pEve->removeObserver(this);
+	}
+
+	void Observer::IsKeyPressed(const sf::Keyboard::Key tecla)
+	{
+	}
+
+	void Observer::IsKeyLoose(const sf::Keyboard::Key tecla)
+	{
 	}
 
 	void Observer::moveMouse(const sf::Vector2f posMouse)

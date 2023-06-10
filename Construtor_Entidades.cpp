@@ -21,10 +21,10 @@ void Construtor::Construtor_Entidades::verificaJogador()
 	}
 }
 
-Entidades::Entidade* Construtor::Construtor_Entidades::createEnemy(const sf::Vector2f pos, const sf::Vector2f tam)
+Entidades::Entidade* Construtor::Construtor_Entidades::createEnemy(const sf::Vector2f pos)
 {
     verificaJogador();
-    Entidades::Personagens::Inimigo* inimigo = new Entidades::Personagens::Inimigo(pos, tam, pjogador1);
+    Entidades::Personagens::Inimigo* inimigo = new Entidades::Personagens::Inimigo(pos, pjogador1);
     if (inimigo == nullptr) {
         std::cout << "Construtor::Construtor_Fase::nao foi possivel criar um inimigo" << std::endl;
         exit(1);
@@ -32,9 +32,9 @@ Entidades::Entidade* Construtor::Construtor_Entidades::createEnemy(const sf::Vec
     return static_cast<Entidades::Entidade*>(inimigo);
 }
 
-Entidades::Entidade* Construtor::Construtor_Entidades::createPlayer(const sf::Vector2f pos, bool first)
+Entidades::Entidade* Construtor::Construtor_Entidades::createPlayer(const sf::Vector2f pos)
 {
-    Entidades::Personagens::Jogador* jogador1 = new Entidades::Personagens::Jogador(pos,first);
+    Entidades::Personagens::Jogador* jogador1 = new Entidades::Personagens::Jogador(pos);
     if (jogador1 == nullptr) {
         std::cout << "Jungle::Construtor::ConstrutorFase::nao foi possivel criar um Jogador" << std::endl;
         exit(1);

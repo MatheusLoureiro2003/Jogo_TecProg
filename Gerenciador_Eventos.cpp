@@ -7,6 +7,8 @@ Gerenciadores::Gerenciador_Eventos* Gerenciadores::Gerenciador_Eventos::instance
 Gerenciadores::Gerenciador_Grafico* Gerenciadores::Gerenciador_Eventos::pGG = Gerenciadores::Gerenciador_Grafico::getInstance();
 Gerenciadores::Gerenciador_Estados* Gerenciadores::Gerenciador_Eventos::pGE = Gerenciadores::Gerenciador_Estados::getInstance();
 
+Listas::ListaObserver* Gerenciadores::Gerenciador_Eventos::listaObservador = nullptr;
+
 Gerenciadores::Gerenciador_Eventos* Gerenciadores::Gerenciador_Eventos::getInstance()
     {
         if (instance == nullptr)
@@ -17,10 +19,20 @@ Gerenciadores::Gerenciador_Eventos* Gerenciadores::Gerenciador_Eventos::getInsta
     }
 
 Gerenciadores::Gerenciador_Eventos::Gerenciador_Eventos()
-{}
+{
+    listaObservador = new Listas::ListaObserver();
+    if (listaObservador == nullptr) {
+        std::cout << "ERROR:::Gerenciadores::Gerenciador_Eventos::nao foi possivel criar uma Lista de Observadores" << std::endl;
+        exit(1);
+    }
+}
 
 Gerenciadores::Gerenciador_Eventos::~Gerenciador_Eventos()
 {
+    if (listaObservador) {
+        delete(listaObservador);
+        listaObservador = nullptr;
+    }
 }
 void Gerenciadores::Gerenciador_Eventos::addObserver(Observadores::Observer* observador)
 {
@@ -34,71 +46,17 @@ void Gerenciadores::Gerenciador_Eventos::removeObserver(int pos)
 {
     listaObservador->removeObserver(pos);
 }
-/*
-void Gerenciadores::Gerenciador_Eventos::setJogador(Entidades::Personagens::Jogador* pj1, Entidades::Personagens::Jogador* pj2)
-{
-    this->pj1 = pj1;
-    this->pj2 = pj2;
-}
-
-//void Gerenciadores::Gerenciador_Eventos::setInimigo(Entidades::Personagens::Inimigo* pI1)
-//{
- //   this->pI1 = pI1;
-//}
-
-void Gerenciadores::Gerenciador_Eventos::isKeyPressed(const sf::Keyboard::Key tecla, bool first)
-{
-    if (first) {
-        if (tecla == sf::Keyboard::A) {
-            pj1->Walk(true);
-        }
-        else if (tecla == sf::Keyboard::D) {
-            pj1->Walk(false);
-        }
-        else if (tecla == sf::Keyboard::Escape) {
-            pGG->closeWindow();
-        }
-    }
-    else {
-        if (tecla == sf::Keyboard::Left) {
-            pj2->Walk(true);
-        }
-        else if (tecla == sf::Keyboard::Right) {
-            pj2->Walk(false);
-        }
-        else if (tecla == sf::Keyboard::Escape) {
-            pGG->closeWindow();
-        }
-    }
-}
-
-void Gerenciadores::Gerenciador_Eventos::isKeyLoose(const sf::Keyboard::Key tecla, bool first)
-{
-    if (first) {
-        if (tecla == sf::Keyboard::D || tecla == sf::Keyboard::A) {
-            pj1->Stop();
-        }
-    }
-    else
-    {
-        if (tecla == sf::Keyboard::Left || tecla == sf::Keyboard::Right) {
-            pj2->Stop();
-        }
-    } 
-    
-}
-*/
 void Gerenciadores::Gerenciador_Eventos::executar()
 {
     sf::Event evento;
     while (pGG->getWindow()->pollEvent(evento)) {
         if (evento.type == sf::Event::KeyPressed) {
-            listaObservador->isKeyPressed(evento.key.code, pj1->getFirst());
-            listaObservador->isKeyPressed(evento.key.code, pj2->getFirst());
+            listaObservador->isKeyPressed(evento.key.code);
+            listaObservador->isKeyPressed(evento.key.code);
         }
         else if (evento.type == sf::Event::KeyReleased) {
-            listaObservador->isKeyLoose(evento.key.code, pj1->getFirst());
-            listaObservador->isKeyLoose(evento.key.code, pj2->getFirst());
+            listaObservador->isKeyLoose(evento.key.code);
+            listaObservador->isKeyLoose(evento.key.code);
         }
         else if (evento.type == sf::Event::Closed) {
             pGG->closeWindow();
@@ -109,6 +67,7 @@ void Gerenciadores::Gerenciador_Eventos::executar()
         else if (evento.type == sf::Event::MouseButtonReleased) {
             listaObservador->notifyMouseButtonRealeased(evento.mouseButton.button);
         }
+    }
 }
 
 

@@ -6,7 +6,7 @@ void Menu::UpdateBackPosition()
 
 Menu::Menu(const IDs ID, const sf::Vector2f tamBotao, const std::string nome, const unsigned int tamFonte):
 	Ente(ID), ButtonList(), it(), ButtonSize(tamBotao),WindowSize(pGG->getWindowSize()), BackPosition(sf::Vector2f(0.0f,0.0f)),
-	MenuName(pGG->loadFont("Jogo_TecProg/Assets/ThaleahFat.ttf"), nome, tamFonte)
+	MenuName(pGG->loadFont("C:/Users/Matha/source/repos/jogo/Jogo_TecProg/Assets/ThaleahFat.ttf"), nome, tamFonte)
 {
 }
 
@@ -25,7 +25,7 @@ void Menu::addButton(const std::string info, const sf::Vector2f pos, const IDs I
 {
 	Botao* button = new Botao(info, ButtonSize, pos, ID, corSelecionado);
 	if (button == nullptr) {
-		throw("ERROR::Jungle::Menu::nao foi possivel criar um botao");
+		throw("ERROR::Menu::nao foi possivel criar um botao");
 	}
 	ButtonList.push_back(button);
 }

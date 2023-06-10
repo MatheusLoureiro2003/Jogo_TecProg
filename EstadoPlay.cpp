@@ -22,3 +22,11 @@ void EstadoPlay::executar()
 {
 	fase->Executar();
 }
+
+void EstadoPlay::changeObserverState()
+{
+	//desativa o observador do jogador
+	fase->getJogador()->changeObserverState();
+	//desativa o observador da fase
+	fase->changeObserverState();
+}

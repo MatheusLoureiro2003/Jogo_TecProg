@@ -11,7 +11,8 @@
 #define VELOCIDADE_INIMIGO 50.0f
 #define VELOCIDADE_INIMIGO_X 0.025f
 #define VELOCIDADE_INIMIGO_Y 0.025f
-
+#define TAMANHO_INIMIGO_X 50.0f
+#define TAMANHO_INIMIGO_Y 90.0f
 #define RAIO_PERSEGUIR_X 200.0f
 #define RAIO_PERSEGUIR_Y 200.0f
 
@@ -33,7 +34,7 @@ namespace Entidades {
             void Inicializa();
             void MoveInimigo();
         public:
-            Inimigo(const sf::Vector2f pos, const sf::Vector2f tam, Entidades::Personagens::Jogador*jogador);
+            Inimigo(const sf::Vector2f pos, Entidades::Personagens::Jogador*jogador);
             ~Inimigo();
             void atualizar();
             void ChasePlayer(sf::Vector2f posJogador, sf::Vector2f posInimigo);

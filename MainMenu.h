@@ -1,24 +1,27 @@
 #pragma once
 #include "Menu.h"
 #include "Background.h"
+#include "ObserverMainMenu.h"
 
 #define TAMANHO_BOTAO_X 350.0f
 #define TAMANHO_BOTAO_Y 50.0f
 
-class MainMenu :
-    public Menu
-{
-private:
-    Background fundo;
-    bool leave;
-    void createBackground();
-    void createButton();
-public:
-    MainMenu();
-    ~MainMenu();
-    void setLeave(const bool sair = true);
-    const bool getLeave() const;
-    //void mudarEstadoObservador();
-    void executar();
-};
-
+namespace Menus {
+    class MainMenu :
+        public Menu
+    {
+    private:
+        Observadores::ObserverMainMenu* observadorMenuPrincipal;
+        Background fundo;
+        bool leave;
+        void createBackground();
+        void createButton();
+    public:
+        MainMenu();
+        ~MainMenu();
+        void setLeave(const bool sair = true);
+        const bool getLeave() const;
+        void changeObserverState();
+        void executar();
+    };
+}
