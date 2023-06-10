@@ -8,14 +8,13 @@ void Fases::Fase::updateEntities()
 
 Fases::Fase::Fase(const IDs ID_Fase, const IDs ID_Fundo):Ente(ID),
 background(ID_Fundo), listaPersonagens(),
-listaObstaculos(), construtorEntidade(), observadorFase(new Observadores::ObserverFase(this))
+construtorEntidade(), observadorFase(new Observadores::ObserverFase(this))
 {
-
 }
 
 Fases::Fase::~Fase()
 {
-	listaObstaculos.limparLista();
+	
 	listaPersonagens.limparLista();
 	if (observadorFase) {
 		delete(observadorFase);

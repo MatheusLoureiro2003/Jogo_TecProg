@@ -34,8 +34,7 @@ void Jogo::Executar()
         pEve->executar();
         pGG->clearWindow();
         pGE->executar();
-        LEs->executar();
-        fase1->draw();
+  
         pGG->displayWindow();
     }
 

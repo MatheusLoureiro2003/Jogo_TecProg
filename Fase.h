@@ -3,6 +3,7 @@
 #include "Ente.h"
 #include"Background.h"
 #include "Construtor_Entidades.h"
+#include <fstream>
 
 
 namespace Observadores {
@@ -17,7 +18,7 @@ namespace Fases {
 		Observadores::ObserverFase* observadorFase;
 	protected:
 		Listas::ListaEntidades listaPersonagens;
-		Listas::ListaEntidades listaObstaculos;
+		//Listas::ListaEntidades listaObstaculos;
 		Construtor::Construtor_Entidades construtorEntidade;
 
 		Background background;

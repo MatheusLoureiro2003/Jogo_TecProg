@@ -26,12 +26,7 @@ namespace Listas {
 		objListaObservador.removerElemento(pos);
 	}
 
-	int ListaObserver::getTam()
-	{
-		return objListaObservador.getLen();
-	}
-
-	Observadores::Observer* ListaObserver::operator[](int pos)
+	Observadores::Observer* ListaObserver::GetItem(int pos)
 	{
 		return objListaObservador.getItem(pos);
 	}

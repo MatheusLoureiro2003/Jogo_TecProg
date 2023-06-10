@@ -7,6 +7,7 @@ Listas::ListaEntidades::ListaEntidades() :
 
 Listas::ListaEntidades::~ListaEntidades()
 {
+	LEs.limparLista();
 }
 
 void Listas::ListaEntidades::addEntidade(Entidades::Entidade* entidade)
