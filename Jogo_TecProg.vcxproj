@@ -157,7 +157,6 @@
     <ClCompile Include="Entidade.cpp" />
     <ClCompile Include="Estado.cpp" />
     <ClCompile Include="EstadoMainMenu.cpp" />
-    <ClCompile Include="EstadoMenuMainOption.cpp" />
     <ClCompile Include="EstadoMenuPause.cpp" />
     <ClCompile Include="EstadoPlay.cpp" />
     <ClCompile Include="Fase.cpp" />
@@ -197,7 +196,6 @@
     <ClInclude Include="Entidade.h" />
     <ClInclude Include="Estado.h" />
     <ClInclude Include="EstadoMainMenu.h" />
-    <ClInclude Include="EstadoMenuMainOption.h" />
     <ClInclude Include="EstadoMenuPause.h" />
     <ClInclude Include="EstadoPlay.h" />
     <ClInclude Include="Fase.h" />

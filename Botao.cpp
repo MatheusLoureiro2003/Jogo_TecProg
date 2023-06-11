@@ -59,6 +59,14 @@ void Botao::updateText()
 
 void Botao::setSelecionado(const bool selecionado)
 {
+    if (selecionado) {
+        text.setColorText(colorSelected);
+    }
+    else {
+        text.setColorText(sf::Color::White);
+    }
+    this->selected = selecionado;
+    text.reset();
 }
 
 const bool Botao::getSelecionado() const

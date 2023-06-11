@@ -168,9 +168,6 @@
     <ClCompile Include="EstadoMenuPause.cpp">
       <Filter>Arquivos de Origem\Estados</Filter>
     </ClCompile>
-    <ClCompile Include="EstadoMenuMainOption.cpp">
-      <Filter>Arquivos de Origem\Estados</Filter>
-    </ClCompile>
     <ClCompile Include="MenuPause.cpp">
       <Filter>Arquivos de Origem\Menu</Filter>
     </ClCompile>
@@ -288,9 +285,6 @@
       <Filter>Arquivos de Cabeçalho\Gerenciadores</Filter>
     </ClInclude>
     <ClInclude Include="EstadoMenuPause.h">
-      <Filter>Arquivos de Cabeçalho\Estados</Filter>
-    </ClInclude>
-    <ClInclude Include="EstadoMenuMainOption.h">
       <Filter>Arquivos de Cabeçalho\Estados</Filter>
     </ClInclude>
     <ClInclude Include="MenuPause.h">

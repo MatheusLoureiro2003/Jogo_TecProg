@@ -2,7 +2,7 @@
 
 #include "Ente.h"
 #include "AnimatedText.h"
-#define TEMPO_TROCAR_COR 0.01f
+#define TEMPO_TROCAR_COR 0.02f
 #define CAMINHO_FONTE "C:/Users/Matha/source/repos/jogo/Jogo_TecProg/Assets/ThaleahFat.ttf"
 
 
@@ -25,7 +25,7 @@ protected:
 public:
     Botao(const std::string info, const sf::Vector2f tam, const sf::Vector2f pos, const IDs ID, const sf::Color corSelecionado);//const IDs::IDs ID
     virtual ~Botao();
-    virtual void draw();
+    void draw();
     void updateText();
     void setSelecionado(const bool selecionado = true);
     const bool getSelecionado() const;

@@ -12,7 +12,7 @@ namespace Menus {
     {
     private:
         Observadores::ObserverMainMenu* observadorMenuPrincipal;
-        Background fundo;
+        Background background;
         bool leave;
         void createBackground();
         void createButton();

@@ -2,7 +2,7 @@
 
 namespace Menus {
     MainMenu::MainMenu() : Menu(IDs::menu_principal, sf::Vector2f(TAMANHO_BOTAO_X, TAMANHO_BOTAO_Y), "CaçadorEspacial", 180),
-        leave(false), fundo(IDs::fundo_normal), observadorMenuPrincipal(new Observadores::ObserverMainMenu(this))
+        leave(false), background(IDs::fase_Cyberpunk), observadorMenuPrincipal(new Observadores::ObserverMainMenu(this))
     {
         MenuName.setPos(sf::Vector2f(WindowSize.x / 2.0f - MenuName.getTam().x / 2.0f, 25.0f));
         MenuName.setColorText(sf::Color{0, 200, 0});
@@ -38,7 +38,7 @@ namespace Menus {
         //conteúdo do efeito Parallax
         BackPosition = sf::Vector2f(BackPosition.x + 0.05f, BackPosition.y);
         pGG->centerView(sf::Vector2f(BackPosition.x + WindowSize.x / 2.0f, BackPosition.y + WindowSize.y / 2.0f));
-        fundo.executar();
+        background.executar();
         pGG->resetWindow();
 
         //desenha todo o conteúdo do menu principal na tela
@@ -60,5 +60,10 @@ namespace Menus {
 
     void MainMenu::createBackground()
     {
+        background.addLayer("./Assets/Background/Day/1.png", 0.0f);
+        background.addLayer("./Assets/Background/Day/2.png", 0.1f);
+        background.addLayer("./Assets/Background/Day/3.png", 0.3f);
+        background.addLayer("./Assets/Background/Day/4.png", 0.5f);
+        background.addLayer("./Assets/Background/Day/5.png", 1.0f);
     }
 }
