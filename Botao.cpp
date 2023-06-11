@@ -12,6 +12,8 @@ timeChangeColor(TEMPO_TROCAR_COR),time(0.0f),colorSelected(corlorSelected)
 		pos.x + tam.y / 3.0f - textSize.x / 2.05f,
 		pos.y + tam.y / 2.0f - textSize.y * 1.2f
 	);
+    this->text.setPos(textPos);
+    TextBox.setFillColor(sf::Color::Transparent);
 }
 
 Botao::~Botao()
@@ -55,6 +57,8 @@ void Botao::updateText()
     else {
         time = 0.0f;
     }
+    text.setPos(pos);
+
 }
 
 void Botao::setSelecionado(const bool selecionado)
@@ -84,6 +88,7 @@ void Botao::updatePosition(const sf::Vector2f pos)
 		pos.y + tam.y / 2.0f - textSize.y * 1.2f
 	);
 	this->text.setPos(textPos);
+    
 }
 
 const sf::Vector2f Botao::getPos() const

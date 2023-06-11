@@ -2,6 +2,7 @@
 
 void Menu::UpdateBackPosition()
 {
+	BackPosition = pGG->getCamera().getCenter();
 }
 
 Menu::Menu(const IDs ID, const sf::Vector2f tamBotao, const std::string nome, const unsigned int tamFonte):

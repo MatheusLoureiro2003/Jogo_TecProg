@@ -1,25 +1,36 @@
-#pragma once
+#pragma once 
+
 #include <SFML\Graphics.hpp>
 
-class Text
-{
-private:
-    const sf::Font font;
-    std::string info;
-protected:
-    sf::Text text;
-    sf::Vector2f tam;
-    unsigned int fontSize;
-    sf::Color textColor;
-    sf::Color edgeColor;
+namespace Jungle {
 
-    void inicializa();
-public:
-    Text(const sf::Font font, const std::string info, const unsigned int fontSize = 50);
-    ~Text();
-    const sf::Text getText() const;
-    void setPos(const sf::Vector2f pos);
-    sf::Vector2f getTam();
-    void setColorText(const sf::Color corTexto);
-};
+    namespace Menu {
 
+        namespace Botao {
+
+            class Texto {
+            private:
+                const sf::Font fonte;
+                std::string info;
+            protected:
+                sf::Text texto;
+                sf::Vector2f tam;
+                unsigned int tamFonte;
+                sf::Color corTexto;
+                sf::Color corBorda;
+
+                void inicializa();
+            public:
+                Texto(const sf::Font fonte, const std::string info, const unsigned int tamFonte = 50);
+                ~Texto();
+                const sf::Text getTexto() const;
+                void setPos(const sf::Vector2f pos);
+                sf::Vector2f getTam();
+                void setCorTexto(const sf::Color corTexto);
+            };
+
+        }
+
+    }
+
+}

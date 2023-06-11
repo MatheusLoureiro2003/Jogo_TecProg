@@ -1,43 +1,51 @@
-#include "Text.h"
+#include "..\..\..\include\Menu\Botao\Texto.hpp"
 
+namespace Jungle {
 
-Text::Text(const sf::Font font, const std::string info, const unsigned int fontSize):
-	font(font), text(), info(info), textColor(sf::Color::White),
-	edgeColor(sf::Color::Black), fontSize(fontSize)
-{
+    namespace Menu {
+
+        namespace Botao {
+
+            Texto::Texto(const sf::Font fonte, const std::string info, const unsigned int tamFonte) :
+                fonte(fonte), texto(), info(info), corTexto(sf::Color::White),
+                corBorda(sf::Color::Black), tamFonte(tamFonte)
+            {
+                inicializa();
+            }
+
+            Texto::~Texto() {
+
+            }
+
+            void Texto::inicializa() {
+                texto.setString(info);
+                texto.setCharacterSize(tamFonte);
+                texto.setFont(fonte);
+                texto.setOutlineThickness(5);
+                texto.setOutlineColor(corBorda);
+                texto.setFillColor(corTexto);
+                tam = sf::Vector2f(texto.getGlobalBounds().width, texto.getGlobalBounds().height);
+            }
+
+            void Texto::setCorTexto(const sf::Color corTexto) {
+                this->corTexto = corTexto;
+                texto.setFillColor(corTexto);
+            }
+
+            const sf::Text Texto::getTexto() const {
+                return texto;
+            }
+
+            void Texto::setPos(const sf::Vector2f pos) {
+                texto.setPosition(pos);
+            }
+
+            sf::Vector2f Texto::getTam() {
+                return tam;
+            }
+
+        }
+
+    }
 
 }
-
-Text::~Text()
-{
-}
-
-void Text::inicializa()
-{
-    text.setString(info);
-    text.setCharacterSize(fontSize);
-    text.setFont(font);
-    text.setOutlineThickness(5);
-    text.setOutlineColor(edgeColor);
-    text.setFillColor(textColor);
-    tam = sf::Vector2f(text.getGlobalBounds().width, text.getGlobalBounds().height);
-}
-
-void Text::setColorText(const sf::Color corTexto) {
-    this->textColor = corTexto;
-    text.setFillColor(corTexto);
-}
-
-const sf::Text Text::getText() const
-{
-	return text;
-}
-
-void Text::setPos(const sf::Vector2f pos) {
-    text.setPosition(pos);
-}
-
-sf::Vector2f Text::getTam() {
-    return tam;
-}
-

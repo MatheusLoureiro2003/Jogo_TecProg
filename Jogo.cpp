@@ -2,9 +2,9 @@
 
 Gerenciadores::Gerenciador_Grafico* Jogo::pGG = Gerenciadores::Gerenciador_Grafico::getInstance();
 Gerenciadores::Gerenciador_Eventos* Jogo::pEve = Gerenciadores::Gerenciador_Eventos::getInstance();
-Gerenciadores::Gerenciador_Estados* Jogo::pGE = Gerenciadores::Gerenciador_Estados::getInstance();
 
-Jogo::Jogo()
+
+Jogo::Jogo():mainMenu()
 {
     if (pGG == nullptr) {
         std::cout << "ERROR::Jogo nao foi possivel criar o Gerenciador_Grafico" << std::endl;
@@ -14,11 +14,6 @@ Jogo::Jogo()
         std::cout << "ERROR::Jogo nao foi possivel criar um Gerenciador_Evento" << std::endl;
         exit(1);
     }
-    if (pGE == nullptr) {
-        std::cout << "ERROR::Jogo nao foi possivel criar um Gerenciador_Estado" << std::endl;
-        exit(1);
-    }
-    inicializa();
 
     Executar();
 }
@@ -33,12 +28,10 @@ void Jogo::Executar()
     {
         pEve->executar();
         pGG->clearWindow();
-        pGE->executar();
+        mainMenu.executar();
   
         pGG->displayWindow();
     }
 
 }
-void Jogo::inicializa() {
-    pGE->addState(IDs::estado_menu_principal);
-}
+
