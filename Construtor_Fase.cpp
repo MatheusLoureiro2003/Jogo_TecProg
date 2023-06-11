@@ -16,17 +16,17 @@ namespace Construtor {
         {
         case (IDs::jogar_cyberpunk):
         {
-           fase = createCyberPunk();
+            fase = createCyberPunk();
         }
         break;
         case (IDs::jogar_deserto):
         {
-           // fase = createDeserto();
+            fase = createDeserto();
         }
         break;
         case (IDs::jogar_espaco):
         {
-           // fase = createEspaco();
+            fase = createSpace();
         }
         break;
         default:
@@ -40,7 +40,7 @@ namespace Construtor {
         fase->createMap();
         return fase;
     }
-    
+
     Fases::Fase* Construtor_Fase::createCyberPunk()
     {
         Fases::Fase* fase = static_cast<Fases::Fase*>(new Fases::Cyberpunk());
@@ -50,8 +50,8 @@ namespace Construtor {
         }
         return fase;
     }
-    /*
-    Fases::Fase* Construtor_Fase::criarDeserto()
+
+    Fases::Fase* Construtor_Fase::createDeserto()
     {
         Fases::Fase* fase = static_cast<Fases::Fase*>(new Fases::Deserto());
         if (fase == nullptr) {
@@ -61,13 +61,13 @@ namespace Construtor {
         return fase;
     }
 
-    Fases::Fase* Construtor_Fase::criarEspaco()
+    Fases::Fase* Construtor_Fase::createSpace()
     {
-        Fases::Fase* fase = static_cast<Fases::Fase*>(new Fases::Espaco());
+        Fases::Fase* fase = static_cast<Fases::Fase*>(new Fases::Space());
         if (fase == nullptr) {
             std::cout << "Construtor::Construtor_Fase::nao foi possivel criar Fase Espaço" << std::endl;
             exit(1);
         }
         return fase;
-    }*/
+    }
 }

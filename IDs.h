@@ -2,9 +2,9 @@
 
 enum class IDs
 {
-	vazio = 0,
-	jogador,
-	inimigo,
+    vazio = 0,
+    jogador,
+    inimigo,
     botao_novoJogo,
     botao_carregarJogo,
     botao_salvarJogada,
@@ -23,6 +23,10 @@ enum class IDs
     jogar_deserto,
     jogar_espaco,
     fase_Cyberpunk,
-    fundo_Cyberpunk
+    fundo_Cyberpunk,
+    fase_Deserto,
+    fundo_Deserto,
+    fase_Space,
+    fundo_Space
 };
 

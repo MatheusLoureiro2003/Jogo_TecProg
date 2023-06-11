@@ -41,5 +41,5 @@ void Jogo::Executar()
 
 }
 void Jogo::inicializa() {
-    pGE->addState(IDs::jogar_cyberpunk);
+    pGE->addState(IDs::jogar_espaco);
 }
