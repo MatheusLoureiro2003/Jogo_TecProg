@@ -201,6 +201,9 @@
     <ClCompile Include="ObserverMenuPause.cpp">
       <Filter>Arquivos de Origem\Observadores</Filter>
     </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Jogo.h">
@@ -319,6 +322,9 @@
     </ClInclude>
     <ClInclude Include="ObserverMenuPause.h">
       <Filter>Arquivos de Cabeçalho\Observadores</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Arquivos de Cabeçalho\Elementos_Graficos</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

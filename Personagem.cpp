@@ -1,10 +1,11 @@
 #include "Personagem.h"
 
 
+
 Entidades::Personagens::Personagem::Personagem(const float speed, const sf::Vector2f pos, const sf::Vector2f tam, const IDs ID):
 Entidade(pos, tam,ID),
 canWalk(false), toLeft(false), relogio(), attack(false), dt(0.0f),
-lastSpeed(sf::Vector2f(speed, 0.0f)),maxSpeed(speed)
+lastSpeed(sf::Vector2f(speed, 0.0f)),maxSpeed(speed), animacao(&body)
 {
 }
 
@@ -61,5 +62,15 @@ void Entidades::Personagens::Personagem::updatePosition()
 
     //desenha na janela
     draw();
+}
+
+void Entidades::Personagens::Personagem::updateAnimation()
+{
+    if (canWalk) {
+        animacao.update(toLeft, "ANDA");
+    }
+    else {
+        animacao.update(toLeft, "PARADO");
+    }
 }
 

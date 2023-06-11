@@ -38,7 +38,7 @@ namespace Menus {
         //conteúdo do efeito Parallax
         BackPosition = sf::Vector2f(BackPosition.x + 0.05f, BackPosition.y);
         pGG->centerView(sf::Vector2f(BackPosition.x + WindowSize.x / 2.0f, BackPosition.y + WindowSize.y / 2.0f));
-        background.executar();
+        //background.executar();
         pGG->resetWindow();
 
         //desenha todo o conteúdo do menu principal na tela

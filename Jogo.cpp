@@ -32,13 +32,14 @@ void Jogo::Executar()
     while (pGG->isWindowOpen())
     {
         pEve->executar();
+
         pGG->clearWindow();
+
         pGE->executar();
-  
         pGG->displayWindow();
     }
 
 }
 void Jogo::inicializa() {
-    pGE->addState(IDs::estado_menu_principal);
+    pGE->addState(IDs::jogar_cyberpunk);
 }

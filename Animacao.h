@@ -1,19 +1,19 @@
 #pragma once
-#include "Gerenciador_Grafico.h"
-#include <SFML/Graphics.hpp>
+#include <map>
+#include "Image.h"
 
 class Animacao
 {
-protected:
-	sf::RectangleShape body;
-
-	static Gerenciadores::Gerenciador_Grafico* pGG;
+private:
+    sf::RectangleShape* body;
+    std::map<std::string, Image*> mapImage;
+    sf::Clock clock;
+    std::string currentImage;
 public:
-	Animacao();
-
-	virtual ~Animacao();
-
-	virtual void draw();
+    Animacao(sf::RectangleShape* corpo);
+    ~Animacao();
+    void update(const bool paraEsquerda, std::string imgAtual);
+    void addAnimacao(const char* caminhoTextura, std::string nomeAnimacao, const unsigned int qtdImagem, const float tempoTroca, const sf::Vector2f escala);
 
 };
 

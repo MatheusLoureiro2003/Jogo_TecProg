@@ -23,16 +23,11 @@ namespace Entidades {
         public:
             Jogador(const sf::Vector2f pos);
             ~Jogador();
-            //void move();
             void atualizar();
-            //void setFirst(const bool first);
-            //bool getFirst();
             void jump();
             void canJump();
             void changeObserverState();
-
-            //int getVidas() { return num_Vidas; }
-            //void executar();
+            void updateAnimation();
         };
     }
 }
